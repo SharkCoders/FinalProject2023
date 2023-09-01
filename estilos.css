@@ -119,3 +119,21 @@ main {
     0 0 100px #faed27;
   cursor: pointer;
 }
+/*MODAL REGISTRO*/
+.modal-content {
+  font-family: "Roboto Condensed";
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f4;
+}
+
+.modal-header {
+  background-color: #8d99ae;
+}
+
+.modal-footer {
+  background: rgb(0, 0, 0);
+  font-size: 1em;
+}
