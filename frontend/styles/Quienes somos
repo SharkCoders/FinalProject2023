@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mercadolibro</title>
+     <link rel="stylesheet" href="index3.css">
+ </head>
+ <body>
+<div>
+    
+   <center> <h1>¿Quienes somos?</h1></center>
+   <center><img src="fotoprincipal.jpg"></center>
+   <center> <p>La empresa de tecnología líder en comercio electrónico y soluciones de América Latinaen venta de libros. Nuestro propósito es democratizar el comercio y los servicios financieros para transformar la vida de millones de personas en la región. </p>
+    <h2>Nuestros servicios</h2>
+    <center><div id="mercadolibre"></center>
+    <center><div class="contenedor-galeria"></center>
+    <a><img src="foto1.png"  width=" 300 %" height="300 %" ></a>
+    <a><img src="foto2.png" width=" 300 %" height="300 %"></a>
+    <a><img src="foto3.png" width=" 300 %" height="300 %"></a>
+</div>
+
+ </body>
+ </html>
