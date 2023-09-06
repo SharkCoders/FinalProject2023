@@ -39,7 +39,70 @@
         </ul>
       </nav>
     </header>
-
+    <main>
+      <div class="div__login">
+        <h1>Inicia Sesion</h1>
+        <form>
+          <div class="div__login-input">
+            <input id="usuario" type="text" required>
+            <label>Usuario</label>
+          </div>
+          <div class="div__login-input">
+            <input id="contraseña" type="password" required>
+            <label>Contraseña</label>
+          </div>
+          <input class="buton" type="submit" value="ingresar">
+          <a
+            href=""
+            class="registarse btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >registrarse</a
+          >
+        </form>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+                REGISTRO
+              </h1>
+              <button
+                type="button"
+                class="btn-close text-light"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form>
+              <div class="modal-body">
+                <label>Nombre</label>
+                <input id="nombre" type="text" required>
+                <label>Correo</label>
+                <input id="correo" type="email" required>
+                <label>Contraseña</label>
+                <input id="password" type="password" required>
+              </div>
+              <div class="modal-footer bg-secondary">
+                <input
+                  type="submit"
+                  class="btn btn-warning fw-semibold"
+                  value="REGISTRARSE"
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
