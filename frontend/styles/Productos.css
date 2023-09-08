@@ -372,3 +372,47 @@ footer {
 @media (min-width: 1025px) and (max-width: 1360px) {
     /* Agrega aquí los estilos específicos para televisores de 32 pulgadas */
 }
+
+.product-card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .product-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .product-card:hover .description {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .description p {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  
