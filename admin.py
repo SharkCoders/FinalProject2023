@@ -1,7 +1,12 @@
-import sqlite3
+import mysql.connector
 
-
-conn = sqlite3.connect('Libro.db')
+# conexion con el servidor de la base de datos mysql
+conn = mysql.connector.connect(
+    host="",       # Host de tu servidor MySQL
+    user="root",      # Tu nombre de usuario de MySQL
+    password="",  # Tu contraseña de MySQL
+    database=""    # Nombre de la base de datos MySQL
+)
 cursor = conn.cursor()
 
 cursor.execute('''
@@ -30,7 +35,7 @@ def agregarlibro():
 
     cursor.execute('''
         INSERT INTO Libro (Titulo, Autor, Categoria, Precio, Stock)
-        VALUES (?, ?, ?, ? , ?)
+        VALUES (%s, %s, %s, %s , %s)
     ''', (titulo, autor, categoria, precio, stock))
     conn.commit()
 
@@ -59,12 +64,8 @@ def actualizar_registros():
     categoria = input("ingrese la categoria del libro :")
     precio = int(input("ingrese precio :"))
     stock = int(input("ingrese stock disponible :"))
-    cursor.execute("""
-                UPDATE Libro
-                SET Titulo = ?, Autor = ?, Categoria = ?, Precio = ?, Stock = ?
-                WHERE id_libro = ?
-            """, (titulo, autor, categoria, precio, stock, categoria, id))
-
+    sql = f"UPDATE Libro set Titulo= '{titulo}', Autor='{autor}',Categoria='{categoria}',Precio={precio},Stock={stock} WHERE id_libro= {id} "
+    cursor.execute(sql)
     print(" Registro Actualizado!")
     conn.commit()
 
