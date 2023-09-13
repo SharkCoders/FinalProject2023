@@ -53,7 +53,7 @@ function mostrarSiguienteFrase() {
 // Función para iniciar el carrusel
 function iniciarCarrusel() {
     mostrarSiguienteFrase();
-    setInterval(mostrarSiguienteFrase, 7000); // Cambia la frase cada 7 segundos (7000 milisegundos)
+    setInterval(mostrarSiguienteFrase, 16000); // Cambia la frase cada 7 segundos (7000 milisegundos)
 }
 
 cargarFrasesDesdeArchivo();
