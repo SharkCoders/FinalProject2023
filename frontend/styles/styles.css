@@ -19,7 +19,11 @@ body {
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+<<<<<<< HEAD
     font-size: 25px;
+=======
+    font-size: 20px;
+>>>>>>> 005da7e50a62aa68976b0b0090af3abdbe1510c7
 }
 
 @keyframes carouselAnimation {
