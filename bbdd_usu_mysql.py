@@ -16,7 +16,7 @@ cursor.execute('''
     CREATE TABLE IF NOT EXISTS usuarios (
         id INT AUTO_INCREMENT PRIMARY KEY,
         Nombre VARCHAR(255),
-        Apellido VARCHAR(255),
+        Telefono VARCHAR(255),
         Clave VARCHAR(255),
         Email VARCHAR(255)
     )
@@ -24,14 +24,14 @@ cursor.execute('''
 
 def insertar_usuario():
     nombre = input("Ingrese el nombre: ")
-    apellido = input("Ingrese el apellido: ")
+    telefono = input("Ingrese Su Numero de Telefono: ")
     clave = input("Ingrese la clave: ")
     email = input("Ingrese el correo electrónico: ")
 
     cursor.execute('''
-        INSERT INTO usuarios (Nombre, Apellido, Clave, Email)
+        INSERT INTO usuarios (Nombre, Telefono, Clave, Email)
         VALUES (%s, %s, %s, %s)
-    ''', (nombre, apellido, clave, email))
+    ''', (nombre, telefono, clave, email))
     conexion.commit()
 
 def obtener_usuarios():
@@ -56,7 +56,7 @@ while True:
     elif opcion == '2':
         usuarios = obtener_usuarios()
         if usuarios:
-            df = pd.DataFrame(usuarios, columns=["ID", "Nombre", "Apellido", "Clave", "Email"])
+            df = pd.DataFrame(usuarios, columns=["ID", "Nombre", "Telefono", "Clave", "Email"])
             print("\nUsuarios registrados:")
             print(df)
         else:
