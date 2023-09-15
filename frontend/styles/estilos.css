@@ -828,3 +828,198 @@ p {margin-bottom: 40px;}
 /* 5 FORM */
 
 /* 6 ANIMATIONS */
+
+/*login estilos*/
+
+/*Centrar contenido del div*/
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed";
+}
+/*background de fondo*/
+main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(252, 219, 3, 1) 0%,
+    rgba(253, 235, 116, 1) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+/*aplicar diseño caja div*/
+.div__login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.58);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(250, 237, 39, 0.7);
+  border-radius: 10px;
+}
+.div__login .div__login-input {
+  position: relative;
+}
+.div__login h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: yellow;
+  text-align: center;
+  font-family: "Roboto Condensed";
+}
+/*Diseño y posicion de los inputs*/
+.div__login .div__login-input {
+  position: relative;
+  margin-right: -140px;
+  left: -30px;
+}
+.div__login .div__login-input input {
+  width: 80%;
+  padding-top: 8px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 65px;
+  margin-left: 5px;
+  margin-top: 2px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.div__login .div__login-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px -10px;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+/*Animacion label texto*/
+.div__login .div__login-input input:focus ~ label,
+.div__login .div__login-input input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: yellow;
+  font-size: 12px;
+}
+/*diseño boton ingreso*/
+
+.buton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #faed27;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+
+.buton {
+  margin-right: 50px;
+}
+.registarse {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 5px;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/*Efecto boton registro*/
+.registarse:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(250, 237, 39, 0.7);
+}
+
+/*HOVER EFECTO BOTON INGRESAR*/
+.buton:hover {
+  transition-delay: 1s;
+  background: rgb(250, 237, 39, 0.7);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buton span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #faed27);
+}
+.buton:hover #span1 {
+  left: 100%;
+  transition: 1s;
+  color: #fff;
+}
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #faed27);
+}
+.buton:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #faed27);
+}
+.buton:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #faed27);
+}
+.buton:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/*MODAL REGISTRO*/
+.modal-content {
+  font-family: "Roboto Condensed";
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f4;
+}
