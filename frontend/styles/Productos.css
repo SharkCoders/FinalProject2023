@@ -5,51 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-/*********************NaVBAR**********************************/
-
-            /* Cambia el color de fondo */
-.custom-navbar {
-  background-color:#; /* Cambia el color de fondo a tu elección */
-}
-
-                /* Estilo de fondo y fuente para el navbar */
-.custom-navbar {
-  background-color: #007bff; /* Cambia el color de fondo a tu elección */
-  font-family: Arial, sans-serif; /* Cambia la fuente a tu elección */
-  color: #ffffff; /* Cambia el color del texto a blanco o el que desees */
-}
-
-/* Estilo de los enlaces del navbar */
-.custom-navbar .nav-link {
-  color: #ffffff; /* Cambia el color del texto de los enlaces a blanco o el que desees */
-}
-
-/* Estilo del enlace activo del navbar */
-.custom-navbar .nav-item.active .nav-link {
-  font-weight: bold; /* Cambia el peso de la fuente del enlace activo */
-  color:#ffffff;
-;
-}
-
-.navbar-brand {color:;}
-  
-
-.carousel-caption {
-  background-color:#007bff8a;
-}
-
-
-
-
-/* Estilo del botón del navbar (botón de hamburguesa en pantallas pequeñas) */
-.custom-navbar .navbar-toggler-icon {
-  background-color: #ffffff; /* Cambia el color del botón de hamburguesa a blanco o el que desees */
-}
-
-
-
 /* Línea de carrusel o slider */
 .linea {
     max-width: 100%;

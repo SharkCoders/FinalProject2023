@@ -1,12 +1,5 @@
 /*--Normalización*/
 
-*{
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header{
   min-height: 5vh;
 }
@@ -159,8 +152,6 @@ main {
   font-size: 1em;
 }
 
-
-
 /* Estilos generales */
 body {
   margin: 0;
@@ -271,58 +262,9 @@ body {
   }
 }
 
-/* productos estilos */
-
-/* Reset de body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-
-
-/*********************NaVBAR**********************************/
-
-          /* Cambia el color de fondo */
-.custom-navbar {
-background-color:#; /* Cambia el color de fondo a tu elección */
-}
-
-              /* Estilo de fondo y fuente para el navbar */
-.custom-navbar {
-background-color: #007bff; /* Cambia el color de fondo a tu elección */
-font-family: Arial, sans-serif; /* Cambia la fuente a tu elección */
-color: #ffffff; /* Cambia el color del texto a blanco o el que desees */
-}
-
-/* Estilo de los enlaces del navbar */
-.custom-navbar .nav-link {
-color: #ffffff; /* Cambia el color del texto de los enlaces a blanco o el que desees */
-}
-
-/* Estilo del enlace activo del navbar */
-.custom-navbar .nav-item.active .nav-link {
-font-weight: bold; /* Cambia el peso de la fuente del enlace activo */
-color:#ffffff;
-;
-}
-
-.navbar-brand {color:;}
-
-
 .carousel-caption {
 background-color:#007bff8a;
 }
-
-
-
-
-/* Estilo del botón del navbar (botón de hamburguesa en pantallas pequeñas) */
-.custom-navbar .navbar-toggler-icon {
-background-color: #ffffff; /* Cambia el color del botón de hamburguesa a blanco o el que desees */
-}
-
 
 
 /* Línea de carrusel o slider */
@@ -464,10 +406,6 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
-
-
-
 
 /* Estilos para el botón de suscripción al pasar el mouse */
 .subscribe-button:hover {
@@ -621,8 +559,6 @@ footer {
   background-color: #28a745;
 }
 
-
-
 /* Columnas del footer */
 .column {
   width:100%; 
@@ -717,31 +653,6 @@ footer {
     background: #e39403;
 }
 
-
-/*Landing page style*/
-/*
-STYLES GUIDE: 
-0. RESET
-1. LAYOUT
-2. GENERIC ITEMS
-3. PARTS OF WEB
-4. LIST
-5. FROM 
-6. ANIMATIONS
-----------
-COLORS:
-  color1 => #e3dd30;
-  color2 => #242422;
-  color3 => #29cae3;
-  color4 => #fff;
-*/
-
-/* 0 RESET */
-/* http://meyerweb.com/eric/tools/css/reset/
- v2.0 | 20110126
- License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -764,7 +675,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
   display: block;
 }
 body {
@@ -788,18 +699,11 @@ table {
 
 /* 1 LAYOUT */
 body { text-align: center; font:300 20px/1.7 'Roboto Condensed';}
-.header { display: flex; justify-content: center; align-items: center; }
-.navbar { display: flex; justify-content: center; align-items: center; background: #2a75c0; }
+
+
 .list-productos {display: flex; align-items: center; justify-content: center;}
 .list-productos figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
 
-/* 2 GENERIC ITEMS */
-
-.header { height: 450px; background: url(../images/promos.jpg) no-repeat center top; background-size: cover;}
-.navbar { height: 63px; background: #e3dd30; border-bottom: 1px dashed #242422;}
-  .navbar a { padding: 0 20px; color: #fff; text-decoration: none; text-transform: uppercase; font: 20px 'Stint Ultra Condensed';}
-.title {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
-p {margin-bottom: 40px;}
 
 .btn { border: 2px solid #fff; padding: 10px 40px; display: inline-block; text-decoration: none; color: #fff;}
 
@@ -825,6 +729,4 @@ p {margin-bottom: 40px;}
 .list-productos li { padding: 0 30px; }
 .list-productos figcaption { position: relative; left: 0; right: 0; bottom: -40px;}
 
-/* 5 FORM */
 
-/* 6 ANIMATIONS */
