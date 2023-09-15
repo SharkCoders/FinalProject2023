@@ -1,18 +1,19 @@
+const categorias = ["Novedades", "Infantiles", "Ficcion", "Filosofia y Religíon"];
 
-const listaDeLibros = [ 
-    { titulo: "Libro 1", categoria: "Novedades" },
-    { titulo: "Libro 2", categoria: "Infantiles" },
-    { titulo: "Libro 3", categoria: "Ficción" },
-    { titulo: "Libro 4", categoria: "Filosofia y Religion" },
-  ];
+function createCategoryButton(categoria, index) {
+  const button = document.createElement("button");
+  button.textContent = categoria;
+  button.id = `boton-novedades-${index}`; 
+  button.id = `boton-infantiles-${index}`; 
+  button.id = `boton-ficcion-${index}`; 
+  button.id = `boton-filosofia-${index}`; 
   
-  function filtrarPorCategoria(libros, categoria) {
-    return libros.filter(libro => libro.categoria === categoria);
-  }
-  
-  function mostrarLibros(categoria) {
-    const librosFiltrados = filtrarPorCategoria(listaDeLibros, categoria);
-    console.log("Libros de la categoría '" + categoria + "':");
-    console.log(librosFiltrados);
-  }
-  
+  button.addEventListener("click", function () {
+
+      // Al hacer clic en el botón, redirige a la página de productos y guarda la categoría seleccionada en el localStorage
+      localStorage.setItem("categoria", categoria);
+      window.location.href = "Productos.html";
+    });
+  return button;
+}
+

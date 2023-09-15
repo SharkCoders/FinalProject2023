@@ -34,9 +34,9 @@
   </header>
   <section class="content who">
     <h2 class="title">Quienes Somos</h2>
-    <!agregaría una animación para que cambien las frases, me gustó tu idea! >
-    <p>"Hay quienes no pueden imaginar un mundo sin pájaros; hay quienes no pueden imaginar un mundo sin agua; en lo que
-      a mi refiere, soy incapaz de imaginar un mundo sin libros." Jorge Luis Borges</p>
+    <!agregaría una animación para que cambien las frases, me gustó tu idea!>
+      <p>"Hay quienes no pueden imaginar un mundo sin pájaros; hay quienes no pueden imaginar un mundo sin agua; en lo
+        que a mi refiere, soy incapaz de imaginar un mundo sin libros." Jorge Luis Borges</p>
   </section>
 
   <section class="content productos">
@@ -45,28 +45,37 @@
     <ul class="list-productos">
       <li>
         <figure>
-          <img src="../assets/images/ico1.png" alt="logo Novedades">
-          <figcaption>Novedades</figcaption>
-        </figure>
-      </li>
+            <button id="boton-novedades"
+            onclick="mostrarLibros('Novedades')" class="boton-novedades"></button>
+              <figcaption>Novedades</figcaption>
+            </figure>
+          </li>
+
       <li>
         <figure>
-          <img src="../assets/images/ico2.png" alt="logo Infantiles">
-          <figcaption>Infantiles</figcaption>
-        </figure>
-      </li>
+            <button id="boton-infantiles"
+            onclick="mostrarLibros('Infantiles')" class="boton-infantiles"></button>
+              <figcaption>Infantiles</figcaption>
+            </figure>
+          </li>
+
       <li>
-        <figure>
-          <img src="../assets/images/ico3.png" alt="logo Ficción">
-          <figcaption>Ficción</figcaption>
-        </figure>
-      </li>
+          <figure>
+            <button id="boton-ficcion"
+            onclick="mostrarLibros('Ficción')" class="boton-ficcion"></button>
+              <figcaption>Ficción</figcaption>
+            </figure>
+          </li>
+          
       <li>
-        <figure>
-          <img src="../assets/images/ico4.png" alt="logo Filosofia y religion">
-          <figcaption>Filosofia y religion</figcaption>
-        </figure>
-      </li>
+          <figure>
+            <button id="boton-filosofia"
+            onclick="mostrarLibros('Filosofia y Religion')" class="boton-filosofia" ></button>
+              <figcaption>Filosofia y Religion</figcaption>
+            </figure>
+          </li>    
+          <script src="../../frontend/scripts/filtro.js"></script> 
+          <link rel="stylesheet" href="../styles/estilos.css">     
     </ul>
   </section>
 
@@ -84,10 +93,38 @@
 
   <section class="login">
     <h2 class="title">Registrate</h2>
-    <p>Te invitamos a formar parte del selecto mundo de los lectores! Registra tu usuario para recibir novedades y/o realizar compras en nuestro sitio</p>
+    <p>Te invitamos a formar parte del selecto mundo de los lectores! Registra tu usuario para recibir novedades y/o
+      realizar compras en nuestro sitio</p>
   </section>
+  <footer>
+    <div class="column">
+      <h3 class="listFoot1">Contactenos</h3>
 
-  <footer></footer>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-whatsapp"></i><br>
+      <p><span>&#187;</span> Telefono: 0800-que te importa.<br>
+        <span>&#187;</span> Mail: quelibrazo@gmail.com <br>
+        <span>&#187;</span> Nuestros Hoarios <br>
+        <span>&#187;</span> Lunes a viernes:9:00 hs a 19:00 hs<br>
+        <span>&#187;</span> Sabados: De 9:00 hs a 14:00 hs<br>
+        <span>&#187;</span> Calle: Caseros & Cañada.<br>
+        <span>&#187;</span> Còrdoba-Argetina año 2023.
+
+      </p>
+
+
+    </div>
+    <div class="column">
+      <h3>Forma de pago</h3>
+      <img src="../assets/Imagenes/pagos.png" alt="" width="200" height="30">
+      <p><span>&#187;</span> Envios a todo el pais.<br>
+        <span>&#187;</span> El costo de envio depende<br>
+        <span>&#187;</span> de la ciudad o provincia<br>
+        <span>&#187;</span>Politica de privacidad
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
