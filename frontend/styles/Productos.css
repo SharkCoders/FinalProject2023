@@ -1,10 +1,11 @@
 /* Reset de body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: rgba(252, 219, 3, 1) 0%;
     margin: 0;
     padding: 0;
 }
+
 /* Línea de carrusel o slider */
 .linea {
     max-width: 100%;

@@ -1,4 +1,8 @@
 /*--Normalización*/
+.container-form, textarea, input, .modal-body{
+background: rgba(252, 219, 3, 1) 0%;
+}
+
 
 header{
   min-height: 5vh;
@@ -20,6 +24,7 @@ main {
   justify-content: center;
   align-items: center;
   font-family: "Roboto Condensed";
+  background-color: rgba(252, 219, 3, 1) 0%;
 }
 /*background de fondo*/
 main {
@@ -263,7 +268,7 @@ body {
 }
 
 .carousel-caption {
-background-color:#007bff8a;
+background-color:rgba(252, 219, 3, 1) 0%,;
 }
 
 
@@ -271,14 +276,14 @@ background-color:#007bff8a;
 .linea {
   max-width: 100%;
   height: 15px;
-  background-color: #007bff;
+  background-color: rgba(252, 219, 3, 1) 0%,;
 }
 
       .Nuest_Productos{width:100%;
                        height:30%;
                        margin-top:3% ;   
                       text-align: center;
-                      color: #007bff;
+                      color: rgba(252, 219, 3, 1) 0%,;
 
                   }
 
@@ -697,9 +702,6 @@ table {
   border-spacing: 0;
 }
 
-/* 1 LAYOUT */
-body { text-align: center; font:300 20px/1.7 'Roboto Condensed';}
-
 
 .list-productos {display: flex; align-items: center; justify-content: center;}
 .list-productos figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
@@ -725,7 +727,7 @@ body { text-align: center; font:300 20px/1.7 'Roboto Condensed';}
 
 .list-productos figure { position: relative; width: 150px; height: 190px;}
 .list-productos figure:after {content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background: #fff; width: 150px; height: 150px;}
-  .list-productos img {position: relative; z-index: 1;}
+.list-productos img {position: relative; z-index: 1;}
 .list-productos li { padding: 0 30px; }
 .list-productos figcaption { position: relative; left: 0; right: 0; bottom: -40px;}
 
