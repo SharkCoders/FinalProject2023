@@ -110,16 +110,19 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=romance")
   // Función para crear una tarjeta de libro
   function createCard(bookInfo) {
       const card = document.createElement("div");
-      card.classList.add("card");
+      card.classList.add("product-card");
 
       const cardContent = `
-          <img src="${bookInfo.imageLinks.thumbnail}" alt="${bookInfo.title}" class="card-img-top">
-          <div class="card-body">
-              <h5 class="card-title">${bookInfo.title}</h5>
-              <p class="card-author">${bookInfo.authors ? bookInfo.authors.join(", ") : "Autor desconocido"}</p>
-              <p class="card-description">${bookInfo.description || "Sin descripción disponible"}</p>
-          </div>
-      `;
+        <div class="product-image">
+            <img src="${bookInfo.imageLinks.thumbnail}" alt="${bookInfo.title}" class="card-img-top">
+        <div class="description">
+            <p><b>${bookInfo.description || "Sin descripción disponible"}<b></p>
+        </div>
+        </div>
+    <h2>L${bookInfo.title}</h2>
+    <p><br>${bookInfo.authors ? bookInfo.authors.join(", ") : "Autor desconocido"}</p>
+    <a href="#" class="btn-buy">Comprar</a>`
+        ;
 
       card.innerHTML = cardContent;
       return card;
