@@ -830,6 +830,11 @@ button {
   border: none;
   cursor: pointer;
   }
+
+  a:link { 
+    text-decoration:none;
+   }
+
   /* Estos son los estilos específicos para cada botón según la categoría */
   .boton-novedades {
   background: url("../assets/images/ico1.png");

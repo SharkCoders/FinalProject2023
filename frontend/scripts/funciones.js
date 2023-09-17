@@ -111,16 +111,17 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=romance")
   function createCard(bookInfo) {
       const card = document.createElement("div");
       card.classList.add("product-card");
-
+      
       const cardContent = `
         <div class="product-image">
-            <img src="${bookInfo.imageLinks.thumbnail}" alt="${bookInfo.title}" class="card-img-top">
+            <img src="${bookInfo.imageLinks.thumbnail}" alt="${bookInfo.title}" class="card-img-top" width="80px">
         <div class="description">
             <p><b>${bookInfo.description || "Sin descripción disponible"}<b></p>
         </div>
         </div>
-    <h2>L${bookInfo.title}</h2>
+    <h2>${bookInfo.title}</h2>
     <p><br>${bookInfo.authors ? bookInfo.authors.join(", ") : "Autor desconocido"}</p>
+    <p><br>Categoría: ${bookInfo.categories ? bookInfo.categories.join(", ") : "Categoría desconocida"}</p>
     <a href="#" class="btn-buy">Comprar</a>`
         ;
 
