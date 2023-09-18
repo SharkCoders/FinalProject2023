@@ -119,8 +119,8 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=romance")
             <p><b>${bookInfo.description || "Sin descripción disponible"}<b></p>
         </div>
         </div>
-    <h2>${bookInfo.title}</h2>
-    <p><br>${bookInfo.authors ? bookInfo.authors.join(", ") : "Autor desconocido"}</p>
+    <h2><br>Título: ${bookInfo.title}</h2>
+    <p><br>Autor: ${bookInfo.authors ? bookInfo.authors.join(", ") : "Autor desconocido"}</p>
     <p><br>Categoría: ${bookInfo.categories ? bookInfo.categories.join(", ") : "Categoría desconocida"}</p>
     <a href="#" class="btn-buy">Comprar</a>`
         ;
