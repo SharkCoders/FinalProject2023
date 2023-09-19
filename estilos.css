@@ -1,0 +1,487 @@
+/*--Normalización*/
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Para todas las páginas */
+
+header {
+  min-height: 5vh;
+}
+
+main {
+  min-height: 80vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(252, 219, 3, 1) 0%,
+      rgba(253, 235, 116, 1) 100%,
+      rgba(255, 255, 255, 1) 100%
+    );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  min-height: 10vh;
+  background-color: #746b6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Columnas del footer */
+.column {
+  width: calc(33.33% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* navbar */
+.navbar {
+  background-color: #746b6b;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 100px; /* Ajusta el tamaño de acuerdo a tu logo */
+  height: auto;
+}
+
+/* Menú hamburguesa (mobile first) */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  margin-right: 5%; /* Ajusta el espacio a la derecha del icono */
+}
+
+/* Lista de navegación (oculta inicialmente) */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Oculta la lista por defecto en dispositivos móviles */
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(232, 227, 245);
+  transition: color 0.5s;
+}
+
+.container a{
+  text-decoration: none;
+  color: white;
+}
+
+.info-form a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color:rgba(0, 0, 0, 0.1)
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Estilos hover y active para la lista del menú hamburguesa */
+.nav-list a:hover {
+  color: rgba(252, 219, 3, 1); 
+}
+
+/* Mostrar la lista de navegación cuando el menú hamburguesa está activo */
+.menu-toggle:checked + .menu-icon + .nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 105px; /* Ajusta la posición */
+  right: 0;
+  background-color: #746b6b;
+  width: 100%; /* Ocupa todo el ancho */
+  text-align: center; /* Centra el contenido */
+  padding: 10px; /* Espacio interior para centrar los elementos */
+}
+
+.menu-toggle:checked + .menu-icon + .nav-list li {
+  margin: 10px 0;
+  
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Inicialmente,  menú  completamente transparente */
+  }
+  to {
+      opacity: 1; /* Al final,  menú  completamente visible */
+  }
+}
+
+/* Mostrar la lista de navegación en dispositivos más grandes */
+@media (min-width: 768px) {
+  .menu-toggle {
+      display: none;
+  }
+
+  .nav-list {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .nav-list li {
+      margin-right: 20px;
+  }
+
+  .nav-list a {
+      font-size: 18px;
+  }
+
+  .menu-icon {
+      display: none;
+      
+  }
+}
+
+/* ESTILOS DE PÁGINA DE PRODUCTO */
+
+.carousel-caption {
+  background-color:#b3b0b0;
+  }
+
+  /* POR HACER: ocultar carrusel de productos en media mobile*/
+
+  /* Línea de carrusel o slider */
+  .linea {
+    max-width: 100%;
+    height: 15px;
+    background-color: #746b6b;
+  }
+
+  /* estilo de tarjeta de producto*/
+  .product-card {
+    background-color: #746b6b;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 7px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 1rem;
+    max-width: 40%;/****  tarjeta de productos//// se recomienda el 40% ****/
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .product-card p{
+    font-size: 0.8rem;
+  }
+
+  .product-card h2{
+    font-size: 1rem;
+  }
+    
+  /* Contenedor de imagen */
+  .product-card img {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .btn-details, .btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: rgba(252, 219, 3, 1);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  /* FALLA */
+  .description:hover{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+/* ESTILOS PÁGINA DE CONTACTO */
+
+.container-form{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px
+}
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a{
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+.container-form a i{
+  color: orange;
+  margin-right: 10px;
+}
+.container-form form .campo, textarea{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea{
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: orange;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+  background: #e39403;
+}
+
+/* ESTILOS LANDING PAGE */
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.carousel .frase-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-size: 20px;
+}
+
+@keyframes carouselAnimation {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-100%);
+  }
+  75% {
+      transform: translateX(-100%);
+  }
+}
+
+/* ESTILOS LOGIN PAGE */
+
+ /*aplicar diseño caja div*/
+ .div__login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.58);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(250, 237, 39, 0.7);
+  border-radius: 10px;
+}
+.div__login .div__login-input {
+  position: relative;
+}
+.div__login h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: yellow;
+  text-align: center;
+  font-family: "Roboto Condensed";
+}
+/*Diseño y posicion de los inputs*/
+.div__login .div__login-input {
+  position: relative;
+  margin-right: -140px;
+  left: -30px;
+}
+.div__login .div__login-input input {
+  width: 80%;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 45px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.div__login .div__login-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 22px 0;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+/*Animacion label texto*/
+.div__login .div__login-input input:focus ~ label,
+.div__login .div__login-input input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: yellow;
+  font-size: 12px;
+}
+/*diseño boton ingreso*/
+.div__login form .buton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #faed27;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: none;
+  border: #faed27;
+  margin-top: 30px;
+  letter-spacing: 3px;
+}
+.buton {
+  margin-right: 50px;
+}
+.registarse {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/*Efecto boton registro*/
+.registarse:hover {
+  cursor: pointer;
+  color: #faed27;
+}
+
+/*HOVER EFECTO BOTON INGRESAR*/
+.div__login .buton:hover {
+  background: #faed27;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #faed27, 0 0 25px #faed27, 0 0 50px #faed27,
+    0 0 100px #faed27;
+  cursor: pointer;
+}
+/*MODAL REGISTRO*/
+.modal-content {
+  font-family: "Roboto Condensed";
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f4;
+  color: #746b6b;
+}
+
+.modal-header {
+  background-color: #8d99ae;
+}
+
+.modal-footer {
+  background: rgb(235, 5, 5);
+  font-size: 1em;
+}
