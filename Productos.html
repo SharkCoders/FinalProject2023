@@ -55,9 +55,16 @@
           <li class="nav-item">
             <a class="nav-link" href="./Contact.html">Contacto</a>
           </li>
+        </ul> 
 
+                <!--inicio Buscador-->
+         <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
 
-        </ul>
+                <!--fin Buscador-->
+<!--
         <div class="navbar-text">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -81,6 +88,7 @@
     </div>
   </nav>
   <!--fin de Navbar-->
+  -->
   <!--Inicio de Carrusel-->
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -136,6 +144,61 @@
     <br>
     <!--fin Buscador-->
     <section>
+
+      <!--Inicio de selector-->
+
+      <div class="Nuest_Productos">
+        <h3 class="titulo">Nuestros Productos</h3>
+        <!--barra de busqueda con filtro -->
+            <!-- Barra de búsqueda con filtro por categoría -->
+        <div class="Buscador-categoria">
+          <label for="categoria-select"><h5>Buscador por categoria:</h5></label>
+          <select id="categoria-select">
+            <option value="todos">Todos</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="ciencia">Cíencia</option>
+            <option value="matematicas">Matemáticas</option>
+            <option value="biografia">biografia</option>
+            <!-- Agrega más opciones de categorías según tus necesidades -->
+          </select>
+        </div>
+
+
+        
+        
+          </div><!--Inicio de selector-->
+
+      </div>
+
+      <!---contenedor de productos--->
+      <div class="container">
+
+
+        <!---todos los productos--->
+
+
+        <div class="product-card fantasia">
+
+          <img src="../assets/Imagenes/avatar.jpg" alt="Producto 1">
+          <h2>Libro de Avatar</h2>
+          <p>Categ:fantasia Codigo:01<br>
+            Precio:8.000$</p>
+
+
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+        <div class="product-card matematicas">
+
+          <img src="../assets/Imagenes/Baldor.jpg" width="250" height="200"  alt="Producto 1">
+          <h2>Libro de Baldor</h2>
+          <p>Categ:Matematicas Codigo:02<br>
+            Precio:8.000$</p>
+
+
+
+          <a href="#" class="btn-details">Ver Detalles</a>
       <!--tarjetas dinámicas-->
       <div class="container" id="cardContainer">
         <!--Tarjetas estáticas-->
@@ -197,10 +260,26 @@
           <h2>Codigo Proc, Civil y Com</h2>
           <p>Universitario<br>
             Precio: 78.000$</p>
-          
           <a href="#" class="btn-buy">Comprar</a>
         </div>
 
+        <div class="product-card ciencia">
+          <img class="breakpoint" src="../assets/Imagenes/egipto.jpg" alt="" width="250" height="200">
+          <h2>Libro de Egipto</h2>
+          <p>Categ:Historia Codigo:03<br>
+            Precio:8.000$</p>
+
+
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+        <div class="product-card ciencia">
+          <img src="../assets/Imagenes/CarlSegan.jpg" alt="Producto 4">
+          <h2>Libro de Carl Segan</h2>
+          <p>Categ:Ejercicios Codigo:04<br>
+            Precio:20.000$</p>
+          <a href="#" class="btn-details">Ver Detalles</a>
 
         <div class="product-card">
           <div class="product-image">
@@ -242,7 +321,47 @@
           <a href="#" class="btn-buy">Comprar</a>
         </div>
 
+        <div class="product-card ciencia">
+          <img src="../assets/Imagenes/africa.jpg" alt="Producto 1">
+          <h2>Libro de Africa</h2>
+          <p>Categ:fauna y flora Codigo:05<br>
+            Precio:8.000$</p>
 
+
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+        <div class="product-card">
+          <img src="../assets/Imagenes/escolarniños.jpg" alt="Producto 1">
+          <h2>Libro Primer grado</h2>
+          <p>Categ:Escolar Codigo:06<br>
+            Precio:8.000$</p>
+
+
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+
+        <div class="product-card fantasia">
+          <img src="../assets/Imagenes/caperucitaRoja.jpg" alt="Producto 1">
+          <h2>Libro Caperucita Roja</h2>
+          <p>Categ:fantasia Codigo:07<br>
+            Precio:8.000$</p>
+
+
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+        <div class="product-card fantasia">
+          <img src="../assets/Imagenes/alicia.jpg" alt="Producto 1">
+          <h2>Libro de Alicia</h2>
+          <p>Categ:fantasia Codigo:08<br>
+            Precio:8.000$</p>
+
+          <a href="#" class="btn-details">Ver Detalles</a>
         <div class="product-card">
           <div class="product-image">
             <img src="../assets/Imagenes/edgar al poe.jpg" alt="Producto 6">
@@ -299,11 +418,15 @@
           <h2>Coleccion Harry Potter</h2>
           <p>Fantasia<br>
             Precio: 150.000$</p>
-          
           <a href="#" class="btn-buy">Comprar</a>
         </div>
 
         <div class="product-card">
+          <img src="../assets/Imagenes/marketing.jpg" alt="Producto 1">
+          <h2>Libro de Marketing</h2>
+          <p>Categ:Marketing Codigo:09<br>
+            Precio:8.000$</p>
+          <a href="#" class="btn-details">Ver Detalles</a>
           <div class="product-image">
             <img src="../assets/Imagenes/php.jpg" alt="Producto 9">
             <div class="description">
@@ -319,11 +442,47 @@
           <h2>PHP Para Dummies</h2>
           <p>Programacion<br>
             Precio: 30.000$</p>
-          
           <a href="#" class="btn-buy">Comprar</a>
         </div>
 
         <div class="product-card">
+          <img src="../assets/Imagenes/python.jpg" alt="Producto 1">
+          <h2>Libro de Python</h2>
+          <p>Categ:Programacion Codigo:10<br>
+            Precio:8.000$</p>
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+
+        <div class="product-card biografia">
+          <img src="../assets/Imagenes/senna.jpg" alt="Producto 1">
+          <h2>Libro de Sennar</h2>
+          <p>Categ:Biografia Codigo:12<br>
+            Precio:8.000$</p>
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+        <div class="product-card biografia">
+          <img src="../assets/Imagenes/maradona.jpg" alt="Producto 1">
+          <h2>Libro de Maradona</h2>
+          <p>Categ:Biografia Codigo:13<br>
+            Precio:8.000$</p>
+          <a href="#" class="btn-details">Ver Detalles</a>
+          <a href="#" class="btn-buy">Comprar</a>
+        </div>
+
+         <!---fin todos los productos--->
+
+
+
+
+      </div>
+      <!---contenedor de productos--->
+      <!--fin de Galera de Productos-->
+
+
           <div class="product-image">
             <img src="../assets/Imagenes/los 7 habitos.jpg" alt="Producto 10">
             <div class="description">
@@ -382,7 +541,6 @@
           
           <a href="#" class="btn-buy">Comprar</a>
         </div>
--->
       </div>
       <!--fin de Galería de Productos-->
     </section>
@@ -391,7 +549,6 @@
   <br><br><br>
 
   <!--inicio de footer-->
-
   <footer>
     <div class="column">
       <h3 class="listFoot1">Nuestros Horarios</h3>
@@ -411,6 +568,11 @@
       <p>&#169 SharkCoders</p>
     </div>
   </footer>
+<!-- fin de footer -->
+        
+</body>
+
+</html>
 
     <!--SCRIPTS-->
     <script src="./frontend/scripts/filtro.js"></script> 
