@@ -204,6 +204,7 @@ ol, ul {
   .product-card {
     background-color: #746b6b;
     border: 1px solid #ddd;
+    border-radius: 3%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 7px;
     padding: 5px;
@@ -212,7 +213,7 @@ ol, ul {
     vertical-align: top;
     color: white;
     font-size: 1rem;
-    max-width: 40%;/****  tarjeta de productos//// se recomienda el 40% ****/
+    max-width: 30%;/****  tarjeta de productos//// se recomienda el 40% ****/
     display: inline-block;
     vertical-align: top;
   }
@@ -227,8 +228,9 @@ ol, ul {
     
   /* Contenedor de imagen */
   .product-card img {
-    max-width: 100%;
-    height: 100%;
+    border-radius: 3%;
+    max-width: 50%;
+    height: 90%;
   }
   
   .btn-details, .btn-buy {
@@ -244,7 +246,7 @@ ol, ul {
   }
 
   /* FALLA */
-  .description:hover{
+  .description:hover {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3s ease-in-out;
