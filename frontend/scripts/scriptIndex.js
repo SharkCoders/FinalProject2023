@@ -8,7 +8,7 @@ let fraseActualIndex = 0;
 
 // Función para cargar frases desde un archivo de texto
 function cargarFrasesDesdeArchivo() {
-    fetch('/FinalProject2023/frontend/styles/frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
+    fetch('../assets/frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
         .then(response => response.text())
         .then(data => {
             // Dividir por líneas y eliminar líneas vacías
@@ -53,7 +53,9 @@ function mostrarSiguienteFrase() {
 // Función para iniciar el carrusel
 function iniciarCarrusel() {
     mostrarSiguienteFrase();
-    setInterval(mostrarSiguienteFrase, 7000); // Cambia la frase cada 7 segundos (7000 milisegundos)
+    setInterval(mostrarSiguienteFrase, 10000); // Cambia la frase cada 7 segundos (7000 milisegundos)
 }
 
 cargarFrasesDesdeArchivo();
+
+

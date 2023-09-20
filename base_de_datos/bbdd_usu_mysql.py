@@ -71,3 +71,25 @@ while True:
 
 # Cerrar la conexión a la base de datos
 conexion.close()
+
+# Conéctate a la base de datos MySQL
+conexion = mysql.connector.connect(
+    host="127.0.0.1", # Host de tu servidor MySQL
+    user="root", # Tu nombre de usuario de MySQL
+    password="", # Tu contraseña de MySQL
+    database="librosbd" # Nombre de la base de datos MySQL
+)
+
+cursor = conexion.cursor()
+
+# Crear la tabla si no existe
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS libros (
+        idLibro INT AUTO_INCREMENT PRIMARY KEY,
+        Titulo VARCHAR(255),
+        Autor VARCHAR(255),
+        Precio FLOAT(255),
+        Stock INT,
+        FOREIGN KEY (categoría_id) REFERENCES CategoríaDeLibro(categoría_id)
+    )
+''')
