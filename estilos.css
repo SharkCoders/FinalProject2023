@@ -8,6 +8,7 @@
   justify-content: space-between;
 }
 
+
 /* Para todas las páginas */
 
 header {
@@ -365,6 +366,7 @@ section h2{
   align-items: center;
   height: 80px; /* Ajusta la altura según tus necesidades */
   overflow: hidden;
+  color:blue;
 }
 
 .carousel .frase-container {
