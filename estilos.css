@@ -15,7 +15,7 @@ header {
 }
 
 main {
-  min-height: 80vh;
+  min-height: 90vh;
   min-height: 70.3vh;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ body {
 }
 
 footer {
-  min-height: 8vh;
+  min-height: 3vh;
   background-color: #746b6b;
   color: white;
   padding: 20px;
@@ -365,7 +365,6 @@ section h2{
   align-items: center;
   height: 80px; /* Ajusta la altura según tus necesidades */
   overflow: hidden;
-  color:blue;
 }
 
 .carousel .frase-container {
@@ -572,7 +571,7 @@ section h2{
 }
 
 .modal-header {
-  background-color: #8d99ae;
+  background-color: #746b6b;
 }
 
 .modal-footer {
