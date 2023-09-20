@@ -4,14 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   let allBooks = [];
 
+  // Define las URLs que deseas consultar
+  const bookUrls = [
+    "https://www.googleapis.com/books/v1/volumes?q=subject:*",
+    "https://www.googleapis.com/books/v1/volumes?q=id:*",
+  ];
+
   // Función para cargar todos los libros al inicio
   function loadBooks() {
-    fetch("https://www.googleapis.com/books/v1/volumes?q=*")
-      .then(response => response.json())
-      .then(data => {
-        allBooks = data.items; // Almacenar todos los libros
-        console.log("Libros cargados:", allBooks); // Agregar este log
-        showBooks(allBooks); // Mostrar todos los libros al inicio
+    // Realiza las solicitudes fetch y almacena las promesas en un array
+    const fetchPromises = bookUrls.map(url => fetch(url).then(response => response.json()));
+
+    // Espera a que todas las promesas se resuelvan
+    Promise.all(fetchPromises)
+      .then(dataArray => {
+        // Concatena los resultados de todas las solicitudes en un solo array
+        allBooks = dataArray.flatMap(data => data.items || []);
+
+        // Muestra todos los libros al inicio
+        showBooks(allBooks);
+        console.log("Libros cargados:", allBooks);
       })
       .catch(error => console.error(error));
   }
@@ -75,45 +87,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Cargar todos los libros al inicio
   loadBooks();
-
-  // Obtener el elemento "bookCardDescription" después de cargar todos los libros
-  const bookCardDescription = document.getElementById("bookCardDescription");
-
-  // Obtener el título del libro de la URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const bookTitle = urlParams.get("title");
-
-  // Buscar el libro por título en la lista allBooks
-  const selectedBook = allBooks.find(book => book.volumeInfo.title === bookTitle);
-
-  // Crear la tarjeta dinámica si se encontró el libro
-  if (selectedBook) {
-    const card = createDynamicCard(selectedBook.volumeInfo);
-    bookCardDescription.appendChild(card);
-  } else {
-    // Mostrar un mensaje si el libro no se encuentra
-    bookCardDescription.innerHTML = "<p>Libro no encontrado</p>";
-  }
-
-  // Función para crear una tarjeta de libro dinámica
-  function createDynamicCard(bookInfo) {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    const cardDescription = `
-      <div class="card-header">
-        ${bookInfo.title}
-      </div>
-      <div class="card-body">
-        <p class="card-text">${bookInfo.description || "Descripción no disponible"}</p>
-        <a href="../../carrito.html" class="btn btn-primary">Comprar</a>
-      </div>
-      <div class="card-footer text-muted">
-        Autor: ${bookInfo.authors ? bookInfo.authors.join(", ") : "Desconocido"}
-      </div>
-    `;
-
-    card.innerHTML = cardDescription;
-    return card;
-  }
 });
