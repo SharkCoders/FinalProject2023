@@ -119,6 +119,9 @@ footer {
   transition: color 0.5s;
 }
 
+.frase-container {
+  color: white;
+}
 .container a{
   text-decoration: none;
   color: white;
