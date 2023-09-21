@@ -512,10 +512,18 @@ section h2{
 }
 
 .modal-header {
+<<<<<<< HEAD
   background-color: #746b6b;
+=======
+  background-color: #8d99ae;
+>>>>>>> 64884529fc8c13ce97d767e87dc87e5b1d9a0494
 }
 
 .modal-footer {
   background: rgb(235, 5, 5);
   font-size: 1em;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64884529fc8c13ce97d767e87dc87e5b1d9a0494
