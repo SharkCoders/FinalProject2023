@@ -309,6 +309,10 @@ ol {
     
     } 
 
+  #carouselExampleCaptions{
+      display: none;
+    }
+
 }
 /*version tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -357,7 +361,7 @@ ol {
 }
 .container-form form .campo,
 textarea {
-  display: flex;
+ 
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
@@ -415,10 +419,31 @@ textarea {
   min-height: 110px;
   max-height: 100px;
 }
-
+.container-form form .campo,
+textarea {
+  display: flex;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
 }
 /*celular*/
 @media (max-width: 479px)  {
+  .container-form form .campo,
+textarea {
+  display: flex;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
   .container-form {
     width: 100%;
     max-width: 800px;
