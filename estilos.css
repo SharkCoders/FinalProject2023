@@ -1,4 +1,5 @@
-/--Normalización/
+/*--Normalización*/
+
 
 * {
   font-family: sans-serif;
@@ -8,11 +9,14 @@
   justify-content: space-between;
 }
 
+
 /* Para todas las páginas */
+
 
 header {
   min-height: 5vh;
 }
+
 
 main {
   min-height: 90vh;
@@ -25,6 +29,7 @@ main {
  
 }
 
+
 section span a {
   color: #e39403;
 }
@@ -33,6 +38,7 @@ section span a {
   text-align: center;
   font-size: 20px;
 }
+
 
 body {
   margin: 0;
@@ -49,6 +55,7 @@ body {
  
 }
 
+
 footer {
   min-height: 3vh;
   background-color: #746b6b;
@@ -61,7 +68,9 @@ footer {
   align-items: center;
  
 
+
 }
+
 
 /* Columnas del footer */
 .column {
@@ -72,9 +81,9 @@ footer {
   text-align: center;
   box-sizing: border-box;
  
-  
+ 
 }
-/Footer  version celular/
+/*Footer  version celular*/
 @media (max-width: 479px) {
   footer{
     flex-direction: column;
@@ -96,15 +105,18 @@ footer {
  margin-bottom: 5px;
  height: 32px;
 
+
 }
 .column:last-child {
   margin-right: 0;
 }
 
+
 .column h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 
 /* navbar */
 .navbar {
@@ -116,16 +128,19 @@ footer {
   padding: 10px 20px;
 }
 
+
 /* Logo */
 .logo img {
   width: 100px; /* Ajusta el tamaño de acuerdo a tu logo */
   height: auto;
 }
 
+
 /* Menú hamburguesa (mobile first) */
 .menu-toggle {
   display: none;
 }
+
 
 .menu-icon {
   color: white;
@@ -133,6 +148,7 @@ footer {
   cursor: pointer;
   margin-right: 5%; /* Ajusta el espacio a la derecha del icono */
 }
+
 
 /* Lista de navegación (oculta inicialmente) */
 .nav-list {
@@ -142,15 +158,18 @@ footer {
   display: none; /* Oculta la lista por defecto en dispositivos móviles */
 }
 
+
 .nav-list li {
   margin-right: 20px;
 }
+
 
 .nav-list a {
   text-decoration: none;
   color: rgba(232, 227, 245, 0.74);
   transition: color 0.5s;
 }
+
 
 .frase-container {
   color: white;
@@ -160,10 +179,12 @@ footer {
   color: white;
 }
 
+
 .info-form a {
   text-decoration: none;
   color: white;
 }
+
 
 /* lista en pagina principal con categorias */
 ol {
@@ -173,10 +194,12 @@ ol {
   font-size: 25px;
 }
 
+
 /* Estilos hover y active para la lista del menú hamburguesa */
 .nav-list a:hover {
   color: rgba(252, 219, 3, 1);
 }
+
 
 /* Mostrar la lista de navegación cuando el menú hamburguesa está activo */
 .menu-toggle:checked + .menu-icon + .nav-list {
@@ -189,14 +212,17 @@ ol {
   width: 100%; /* Ocupa todo el ancho */
   text-align: center; /* Centra el contenido */
   padding: 10px; /* Espacio interior para centrar los elementos */
-  z-index: 3; /posiciona por delante de cualquier elemento el menu/
+  z-index: 3; /*posiciona por delante de cualquier elemento el menu*/
 }
+
 
 .menu-toggle:checked + .menu-icon + .nav-list li {
   margin: 10px 0;
 
+
   animation: fadeIn 1s ease-in-out;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -207,47 +233,55 @@ ol {
   }
 }
 
+
 /* Mostrar la lista de navegación en dispositivos más grandes */
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 
+
   main p {
     color: brown;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
+
 
   section h2 {
     color: crimson;
     font-family:Cambira, "Times New Roman", Times, serif;
     font-weight: bold;
   }
+
 
   .nav-list {
     display: flex;
     justify-content: flex-end;
   }
 
+
   .nav-list li {
     margin-right: 20px;
   }
+
 
   .nav-list a {
     font-size: 18px;
   }
 
+
   .menu-icon {
     display: none;
   }
 }
-/version tablet/
+/*version tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
   main p {
     color: brown;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
+
   section h2 {
     color: crimson;
     font-family:Cambira, "Times New Roman", Times, serif;
@@ -255,32 +289,40 @@ ol {
   }
 
 
+
+
 }
-/Version celular/
+/*Version celular*/
 @media (max-width: 479px) {
   main p {
     color: brown;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
+
   section h2 {
     color: crimson;
     font-family:Cambira, "Times New Roman", Times, serif;
     font-weight: bold;
   }
 
+
 }
-/ESTILO DE PÁGINA INDEX/
+/*ESTILO DE PÁGINA INDEX*/
 .contenedor-index{
   margin-bottom: 20px;
 
+
 }
 
+
 /* ESTILOS DE PÁGINA DE PRODUCTO */
+
 
 .carousel-caption {
   background-color: #b3b0b0;
 }
+
 
 /* Línea de carrusel o slider */
 .linea {
@@ -289,38 +331,47 @@ ol {
   background-color: #746b6b;
 }
 
+
 .product-card p {
   font-size: 20px;
   color: white;
 }
 .card {
 
+
   max-width: 600px;
-  
+ 
   }
-/version mobile/
+/*version mobile*/
 @media (max-width: 479px) {
   .product-card {
 
+
     max-width: 300px;
-    } 
+    }
     #carouselExampleCaptions{
       display: none;
     }
 
 
+
+
 }
-/version tablet/
+/*version tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
   .card {
 
+
     max-width: 310px;
-    
-    } 
+   
+    }
+
+
 
 
 }
 /* ESTILOS PÁGINA DE CONTACTO */
+
 
 .container-form {
   width: 100%;
@@ -330,8 +381,9 @@ ol {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin-top: 90px;
-  
+ 
 }
+
 
 .container-form h2 {
   margin-bottom: 15px;
@@ -387,7 +439,7 @@ textarea {
 .container-form .btn-enviar:hover {
   background: #e39403;
 }
-/tablet/
+/*tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
   .container-form {
     width: 100%;
@@ -416,8 +468,9 @@ textarea {
   max-height: 100px;
 }
 
+
 }
-/celular/
+/*celular*/
 @media (max-width: 479px)  {
   .container-form {
     width: 100%;
@@ -446,8 +499,10 @@ textarea {
   max-height: 100px;
 }
 
+
 }
 /* ESTILOS LANDING PAGE */
+
 
 .carousel-container {
   display: flex;
@@ -456,6 +511,7 @@ textarea {
   height: 80px; /* Ajusta la altura según tus necesidades */
   overflow: hidden;
 }
+
 
 .carousel .frase-container {
   width: 100%;
@@ -466,16 +522,19 @@ textarea {
   font-size: 20px;
 }
 
-/version mobile/
+
+/*version mobile*/
 @media (max-width: 479px) {
   .carousel-container {
 
+
     max-width: 300px;
-    } 
+    }
     #carousel-container{
       display: none;
     }
 }
+
 
 @keyframes carouselAnimation {
   0%,
@@ -493,9 +552,11 @@ textarea {
   }
 }
 
+
 /* ESTILOS LOGIN PAGE */
 
-/aplicar diseño caja div/
+
+/*aplicar diseño caja div*/
 .div__login {
   position: relative;
   display: flex;
@@ -510,7 +571,8 @@ textarea {
   border-radius: 10px;
 }
 
-.div_login .div_login-input {
+
+.div__login .div__login-input {
   position: relative;
 }
 .div__login h1 {
@@ -520,13 +582,13 @@ textarea {
   text-align: center;
   font-family: "Roboto Condensed";
 }
-/Diseño y posicion de los inputs/
-.div_login .div_login-input {
+/*Diseño y posicion de los inputs*/
+.div__login .div__login-input {
   position: relative;
   margin-right: -140px;
   left: -30px;
 }
-.div_login .div_login-input input {
+.div__login .div__login-input input {
   width: 80%;
   padding-top: 8px 0;
   font-size: 16px;
@@ -539,7 +601,7 @@ textarea {
   outline: none;
   background: transparent;
 }
-.div_login .div_login-input label {
+.div__login .div__login-input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -550,15 +612,16 @@ textarea {
   pointer-events: none;
   transition: 0.5s;
 }
-/Animacion label texto/
-.div_login .div_login-input input:focus ~ label,
-.div_login .div_login-input input:valid ~ label {
+/*Animacion label texto*/
+.div__login .div__login-input input:focus ~ label,
+.div__login .div__login-input input:valid ~ label {
   top: -20px;
   left: 0;
   color: yellow;
   font-size: 12px;
 }
-/diseño boton ingreso/
+/*diseño boton ingreso*/
+
 
 .buton {
   position: relative;
@@ -576,9 +639,11 @@ textarea {
   overflow: hidden;
 }
 
+
 .buton {
   margin-right: 50px;
 }
+
 
 .registarse {
   text-decoration: none;
@@ -593,14 +658,16 @@ textarea {
   letter-spacing: 2px;
 }
 
-/Efecto boton registro/
+
+/*Efecto boton registro*/
 .registarse:hover {
   cursor: pointer;
   color: #fff;
   background: rgb(250, 237, 39, 0.7);
 }
 
-/HOVER EFECTO BOTON INGRESAR/
+
+/*HOVER EFECTO BOTON INGRESAR*/
 .buton:hover {
   transition-delay: 1s;
   background: rgb(250, 237, 39, 0.7);
@@ -661,7 +728,8 @@ textarea {
   transition-delay: 0.75s;
 }
 
-/MODAL REGISTRO/
+
+/*MODAL REGISTRO*/
 .modal-content {
   font-family: "Roboto Condensed";
 }
@@ -672,16 +740,19 @@ textarea {
   color: #000;
 }
 
+
 .modal-header {
   background-color: #746b6b;
 }
+
 
 .modal-footer {
  
   font-size: 1em;
 }
 
-/responsive mobile/
+
+/*responsive mobile*/
 @media (max-width: 479px) {
   .div__login {
     position: absolute;
@@ -698,14 +769,15 @@ textarea {
     border-radius: 10px;
   }
  
- /Diseño y posicion de los inputs/
-.div_login .div_login-input {
+ /*Diseño y posicion de los inputs*/
+.div__login .div__login-input {
   position: relative;
   left: -10px;
   margin-right: -50px;
 }
 
-.div_login .div_login-input input {
+
+.div__login .div__login-input input {
   width: 80%;
   padding-top: 8px 0;
   font-size: 12px;
@@ -718,7 +790,7 @@ textarea {
   outline: none;
   background: transparent;
 }
-.div_login .div_login-input label {
+.div__login .div__login-input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -729,7 +801,8 @@ textarea {
   pointer-events: none;
   transition: 0.5s;
 }
-  /diseño boton ingreso/
+  /*diseño boton ingreso*/
+
 
 .buton {
   position: relative;
@@ -748,9 +821,11 @@ textarea {
  
 }
 
+
 .buton {
   margin-right: 8px;
 }
+
 
 .registarse {
   text-decoration: none;
@@ -763,7 +838,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
-  
+ 
 }
 .div-botones{
   display: flex;
