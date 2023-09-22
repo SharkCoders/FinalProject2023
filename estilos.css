@@ -14,22 +14,6 @@ header {
   min-height: 5vh;
 }
 
-/*--Normalización*/
-
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-
-/* Para todas las páginas */
-
-header {
-  min-height: 5vh;
-}
-
 main {
   min-height: 90vh;
   display: flex;
@@ -289,10 +273,7 @@ ol {
 /*ESTILO DE PÁGINA INDEX*/
 .contenedor-index{
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+
 }
 
 /* ESTILOS DE PÁGINA DE PRODUCTO */
@@ -324,10 +305,10 @@ ol {
     max-width: 310px;
     
     } 
-
-  #carouselExampleCaptions{
+    #carouselExampleCaptions{
       display: none;
     }
+
 
 }
 /*version tablet*/
@@ -377,7 +358,7 @@ ol {
 }
 .container-form form .campo,
 textarea {
- 
+  display: flex;
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
@@ -435,31 +416,10 @@ textarea {
   min-height: 110px;
   max-height: 100px;
 }
-.container-form form .campo,
-textarea {
-  display: flex;
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
+
 }
 /*celular*/
 @media (max-width: 479px)  {
-  .container-form form .campo,
-textarea {
-  display: flex;
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
   .container-form {
     width: 100%;
     max-width: 800px;
@@ -540,7 +500,6 @@ textarea {
   border-radius: 10px;
 }
 
-
 .div__login .div__login-input {
   position: relative;
 }
@@ -595,7 +554,6 @@ textarea {
   position: relative;
   display: inline-block;
   padding: 10px 15px;
-  padding: 10px 15px;
   color: #faed27;
   font-size: 16px;
   text-decoration: none;
@@ -612,7 +570,6 @@ textarea {
   margin-right: 50px;
 }
 
-
 .registarse {
   text-decoration: none;
   display: inline-block;
@@ -622,12 +579,9 @@ textarea {
   color: #fff;
   margin-left: 12px;
   margin-right: 12px;
-  margin-left: 12px;
-  margin-right: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 /*Efecto boton registro*/
 .registarse:hover {
