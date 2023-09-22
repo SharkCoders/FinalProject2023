@@ -300,10 +300,9 @@ ol {
   }
 /*version mobile*/
 @media (max-width: 479px) {
-  .card {
+  .product-card {
 
-    max-width: 310px;
-    
+    max-width: 300px;
     } 
     #carouselExampleCaptions{
       display: none;
