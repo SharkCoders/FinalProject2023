@@ -1,4 +1,4 @@
-/*--Normalización*/
+/--Normalización/
 
 * {
   font-family: sans-serif;
@@ -74,7 +74,7 @@ footer {
  
   
 }
-/*Footer  version celular*/
+/Footer  version celular/
 @media (max-width: 479px) {
   footer{
     flex-direction: column;
@@ -189,7 +189,7 @@ ol {
   width: 100%; /* Ocupa todo el ancho */
   text-align: center; /* Centra el contenido */
   padding: 10px; /* Espacio interior para centrar los elementos */
-  z-index: 3; /*posiciona por delante de cualquier elemento el menu*/
+  z-index: 3; /posiciona por delante de cualquier elemento el menu/
 }
 
 .menu-toggle:checked + .menu-icon + .nav-list li {
@@ -241,7 +241,7 @@ ol {
     display: none;
   }
 }
-/*version tablet*/
+/version tablet/
 @media (min-width: 480px) and (max-width: 1023px) {
   main p {
     color: brown;
@@ -256,7 +256,7 @@ ol {
 
 
 }
-/*Version celular*/
+/Version celular/
 @media (max-width: 479px) {
   main p {
     color: brown;
@@ -270,7 +270,7 @@ ol {
   }
 
 }
-/*ESTILO DE PÁGINA INDEX*/
+/ESTILO DE PÁGINA INDEX/
 .contenedor-index{
   margin-bottom: 20px;
 
@@ -298,7 +298,7 @@ ol {
   max-width: 600px;
   
   }
-/*version mobile*/
+/version mobile/
 @media (max-width: 479px) {
   .product-card {
 
@@ -310,7 +310,7 @@ ol {
 
 
 }
-/*version tablet*/
+/version tablet/
 @media (min-width: 480px) and (max-width: 1023px) {
   .card {
 
@@ -387,7 +387,7 @@ textarea {
 .container-form .btn-enviar:hover {
   background: #e39403;
 }
-/*tablet*/
+/tablet/
 @media (min-width: 480px) and (max-width: 1023px) {
   .container-form {
     width: 100%;
@@ -417,7 +417,7 @@ textarea {
 }
 
 }
-/*celular*/
+/celular/
 @media (max-width: 479px)  {
   .container-form {
     width: 100%;
@@ -466,6 +466,17 @@ textarea {
   font-size: 20px;
 }
 
+/version mobile/
+@media (max-width: 479px) {
+  .carousel-container {
+
+    max-width: 300px;
+    } 
+    #carousel-container{
+      display: none;
+    }
+}
+
 @keyframes carouselAnimation {
   0%,
   100% {
@@ -484,7 +495,7 @@ textarea {
 
 /* ESTILOS LOGIN PAGE */
 
-/*aplicar diseño caja div*/
+/aplicar diseño caja div/
 .div__login {
   position: relative;
   display: flex;
@@ -499,7 +510,7 @@ textarea {
   border-radius: 10px;
 }
 
-.div__login .div__login-input {
+.div_login .div_login-input {
   position: relative;
 }
 .div__login h1 {
@@ -509,13 +520,13 @@ textarea {
   text-align: center;
   font-family: "Roboto Condensed";
 }
-/*Diseño y posicion de los inputs*/
-.div__login .div__login-input {
+/Diseño y posicion de los inputs/
+.div_login .div_login-input {
   position: relative;
   margin-right: -140px;
   left: -30px;
 }
-.div__login .div__login-input input {
+.div_login .div_login-input input {
   width: 80%;
   padding-top: 8px 0;
   font-size: 16px;
@@ -528,7 +539,7 @@ textarea {
   outline: none;
   background: transparent;
 }
-.div__login .div__login-input label {
+.div_login .div_login-input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -539,15 +550,15 @@ textarea {
   pointer-events: none;
   transition: 0.5s;
 }
-/*Animacion label texto*/
-.div__login .div__login-input input:focus ~ label,
-.div__login .div__login-input input:valid ~ label {
+/Animacion label texto/
+.div_login .div_login-input input:focus ~ label,
+.div_login .div_login-input input:valid ~ label {
   top: -20px;
   left: 0;
   color: yellow;
   font-size: 12px;
 }
-/*diseño boton ingreso*/
+/diseño boton ingreso/
 
 .buton {
   position: relative;
@@ -582,14 +593,14 @@ textarea {
   letter-spacing: 2px;
 }
 
-/*Efecto boton registro*/
+/Efecto boton registro/
 .registarse:hover {
   cursor: pointer;
   color: #fff;
   background: rgb(250, 237, 39, 0.7);
 }
 
-/*HOVER EFECTO BOTON INGRESAR*/
+/HOVER EFECTO BOTON INGRESAR/
 .buton:hover {
   transition-delay: 1s;
   background: rgb(250, 237, 39, 0.7);
@@ -650,7 +661,7 @@ textarea {
   transition-delay: 0.75s;
 }
 
-/*MODAL REGISTRO*/
+/MODAL REGISTRO/
 .modal-content {
   font-family: "Roboto Condensed";
 }
@@ -670,7 +681,7 @@ textarea {
   font-size: 1em;
 }
 
-/*responsive mobile*/
+/responsive mobile/
 @media (max-width: 479px) {
   .div__login {
     position: absolute;
@@ -687,14 +698,14 @@ textarea {
     border-radius: 10px;
   }
  
- /*Diseño y posicion de los inputs*/
-.div__login .div__login-input {
+ /Diseño y posicion de los inputs/
+.div_login .div_login-input {
   position: relative;
   left: -10px;
   margin-right: -50px;
 }
 
-.div__login .div__login-input input {
+.div_login .div_login-input input {
   width: 80%;
   padding-top: 8px 0;
   font-size: 12px;
@@ -707,7 +718,7 @@ textarea {
   outline: none;
   background: transparent;
 }
-.div__login .div__login-input label {
+.div_login .div_login-input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -718,7 +729,7 @@ textarea {
   pointer-events: none;
   transition: 0.5s;
 }
-  /*diseño boton ingreso*/
+  /diseño boton ingreso/
 
 .buton {
   position: relative;
