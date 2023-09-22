@@ -14,6 +14,22 @@ header {
   min-height: 5vh;
 }
 
+/*--Normalización*/
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+/* Para todas las páginas */
+
+header {
+  min-height: 5vh;
+}
+
 main {
   min-height: 90vh;
   display: flex;
@@ -499,6 +515,7 @@ textarea {
   border-radius: 10px;
 }
 
+
 .div__login .div__login-input {
   position: relative;
 }
@@ -553,6 +570,7 @@ textarea {
   position: relative;
   display: inline-block;
   padding: 10px 15px;
+  padding: 10px 15px;
   color: #faed27;
   font-size: 16px;
   text-decoration: none;
@@ -569,6 +587,7 @@ textarea {
   margin-right: 50px;
 }
 
+
 .registarse {
   text-decoration: none;
   display: inline-block;
@@ -578,9 +597,12 @@ textarea {
   color: #fff;
   margin-left: 12px;
   margin-right: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 
 /*Efecto boton registro*/
 .registarse:hover {
