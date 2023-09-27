@@ -5,10 +5,10 @@ import mysql.connector
 
 class Administrador():
     conn = mysql.connector.connect(
-        host="",       # Host de tu servidor MySQL
+        host="3307",       # Host de tu servidor MySQL
         user="root",      # Tu nombre de usuario de MySQL
-        password="",  # Tu contraseña de MySQL
-        database=""    # Nombre de la base de datos MySQL
+        password="ismael07",  # Tu contraseña de MySQL
+        database="librosbd"    # Nombre de la base de datos MySQL
     )
     cursor = conn.cursor()
 
