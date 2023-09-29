@@ -1,23 +1,5 @@
 create database libreria;
 use libreria;
-CREATE TABLE Usuarios (
-   usuario_id INT AUTO_INCREMENT PRIMARY KEY,
-   nombre VARCHAR(255) NOT NULL,
-   correo_electronico VARCHAR(255) UNIQUE NOT NULL,
-   contrasena VARCHAR(255) NOT NULL,
-   direccion_envio TEXT
-);
-
-CREATE TABLE Libros (
-   libro_id INT AUTO_INCREMENT PRIMARY KEY,
-   titulo VARCHAR(255) NOT NULL,
-   autor VARCHAR(255),
-   categoria VARCHAR(255),
-   precio DECIMAL(10, 2) NOT NULL,
-   stock INT NOT NULL,
-   descripcion TEXT,
-   portada VARCHAR(255)
-);
 
 CREATE TABLE Carritos (
    carrito_id INT AUTO_INCREMENT PRIMARY KEY,
