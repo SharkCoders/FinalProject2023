@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
           // Filtrar libros por título
           const filteredBooks = allBooks.filter(book => {
-              const title = book.title.toLowerCase();
-              return title.includes(searchTerm);
+              const titulo = book.titulo.toLowerCase();
+              return titulo.includes(searchTerm);
           });
           showBooks(filteredBooks);
       }
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           <p>Precio: $ ${bookInfo.precio}</p>
                           <p>Stock: ${bookInfo.stock}</p>
                           <a href="../../carrito.html" class="btn btn-dark">Comprar</a>
-                          <a href="../../descripcion.html?title=${encodeURIComponent(bookInfo.title)}" class="btn btn-light">Resumen</a>
+                          <a href="../../descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
                       </div>
                   </div>
               </div>
