@@ -1,12 +1,11 @@
 import mysql.connector
-
-# conexion con el servidor de la base de datos mysql
-
+from flask import Flask, render_template
+import mysql.connector
 
 class Administrador():
     def __init__(self):
         self.conn = mysql.connector.connect(
-            port="3307",    # Replace with your MySQL server's hostname or IP address
+            port="3307",  
             user="root",
             password="Ismael07",
             database="librosbd"
