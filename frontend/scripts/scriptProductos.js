@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
       card.classList.add("product-card");
 
       const cardContent = `
-          <div class="card text-bg-secondary mb-3" style="max-width: 600px;">
+          <div class="card text-bg-secondary mb-1" style="max-width: 700px;">
               <div class="row g-0">
                   <div class="col-md-4">
                       <img src="${bookInfo.portada}" alt="${bookInfo.titulo}" class="card-img-top">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-6">
                       <div class="card-body">
                           <p id="title"><br>Título: ${bookInfo.titulo}</p>
                           <p>Autor: ${bookInfo.autor || "Desconocido"}</p>
