@@ -13,31 +13,31 @@ cursor = conexion.cursor()
 
 # Crear la tabla si no existe
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS usuarios (
+    CREATE TABLE IF NOT EXISTS usuario (
         id INT AUTO_INCREMENT PRIMARY KEY,
         Nombre VARCHAR(255),
-        Apellido VARCHAR(255),
-        Clave VARCHAR(255),
-        Email VARCHAR(255)
+        correo_electronico VARCHAR(255) UNIQUE NOT NULL,
+        contrasena VARCHAR(255) NOT NULL,
+        direccion_envio TEXT
     )
 ''')
 
 def insertar_usuario():
-    nombre = input("Ingrese el nombre: ")
-    apellido = input("Ingrese el apellido: ")
-    clave = input("Ingrese la clave: ")
-    email = input("Ingrese el correo electrónico: ")
+    nombre = input("Ingrese su nombre y apellido: ")
+    correo_electronico = input("Ingrese su correo electrónico: ")
+    contrasena = input("Ingrese la contraseña: ")
+    direccion_envio = input("Ingrese el domicilio donde desea recibir su compra: ")
 
     cursor.execute('''
-        INSERT INTO usuarios (Nombre, Apellido, Clave, Email)
+        INSERT INTO usuario (Nombre, correo_electronico, contrasena, direccion_envio)
         VALUES (%s, %s, %s, %s)
-    ''', (nombre, apellido, clave, email))
+    ''', (nombre, correo_electronico, contrasena, direccion_envio))
     conexion.commit()
 
 def obtener_usuarios():
     cursor.execute('SELECT * FROM usuarios')
-    usuarios = cursor.fetchall()
-    return usuarios
+    usuario = cursor.fetchall()
+    return usuario
 
 def eliminar_usuario():
     id_usuario = input("Ingrese el ID del usuario que desea eliminar: ")
@@ -56,7 +56,7 @@ while True:
     elif opcion == '2':
         usuarios = obtener_usuarios()
         if usuarios:
-            df = pd.DataFrame(usuarios, columns=["ID", "Nombre", "Apellido", "Clave", "Email"])
+            df = pd.DataFrame(usuarios, columns=["ID", "Nombre", "correo_electronico", "contrasena", "direccion_envio"])
             print("\nUsuarios registrados:")
             print(df)
         else:
@@ -81,15 +81,3 @@ conexion = mysql.connector.connect(
 )
 
 cursor = conexion.cursor()
-
-# Crear la tabla si no existe
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS libros (
-        idLibro INT AUTO_INCREMENT PRIMARY KEY,
-        Titulo VARCHAR(255),
-        Autor VARCHAR(255),
-        Precio FLOAT(255),
-        Stock INT,
-        FOREIGN KEY (categoría_id) REFERENCES CategoríaDeLibro(categoría_id)
-    )
-''')

@@ -1,0 +1,22 @@
+/* ESTILOS DE PÁGINA DE PRODUCTO */
+
+.carousel-caption {
+    background-color:#b3b0b0;
+    }
+  
+    /* Línea de carrusel o slider */
+    .linea {
+      max-width: 100%;
+      height: 15px;
+      background-color: #746b6b;
+    }
+  
+    .product-card p{
+      font-size: 20px;
+      color:white;
+    }
+  
+    #bookCardDescription{
+      font-size: 20px;
+      color:white;
+    }
