@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
                       <img src="${bookInfo.portada}" alt="${bookInfo.titulo}" class="card-img-top">
                   </div>
                   <div class="col-md-6">
-=======
                       <div class="card-body">
                           <p id="title"><br>Título: ${bookInfo.titulo}</p>
                           <p>Autor: ${bookInfo.autor || "Desconocido"}</p>
