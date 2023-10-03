@@ -8,7 +8,7 @@ let fraseActualIndex = 0;
 
 // Función para cargar frases desde un archivo de texto
 function cargarFrasesDesdeArchivo() {
-    fetch('/frontend/assets/frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
+    fetch('../../frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
         .then(response => response.text())
         .then(data => {
             // Dividir por líneas y eliminar líneas vacías
