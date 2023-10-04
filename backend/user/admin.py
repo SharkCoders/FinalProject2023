@@ -5,9 +5,9 @@ import mysql.connector
 class Administrador():
     def __init__(self):
         self.conn = mysql.connector.connect(
-            port="3307",  
+            port="",  
             user="root",
-            password="Ismael07",
+            password="",
             database="librosbd"
         )
         self.cursor = self.conn.cursor()
