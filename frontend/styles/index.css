@@ -1,39 +1,51 @@
-/* ESTILOS LANDING PAGE */
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px; /* Ajusta la altura según tus necesidades */
-    overflow: hidden;
-  }
-  
-  .carousel .frase-container {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    font-size: 20px;
-    color: rgb(151, 28, 28)
-  }
-  
-  @keyframes carouselAnimation {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    75% {
-        transform: translateX(-100%);
-    }
-  }
-
 /*ESTILO DE PÁGINA INDEX*/
 .contenedor-index{
   margin-bottom: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.carousel .frase-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-size: 20px;
+}
+
+
+/*version mobile*/
+@media (max-width: 479px) {
+  .carousel-container {
+
+
+    max-width: 300px;
+    }
+    #carousel-container{
+      display: none;
+    }
+}
+
+
+@keyframes carouselAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
 }
