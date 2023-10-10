@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p class="card-text">Stock Disponible: ${book.stock} Unidades</p>
                 
                 <button id="comprarButton" class="comprar-button"><a href="../../carrito.html">Comprar</a></button>
-                <button class="btn btn-dark"><a href="../../Productos.html">Volver</a></button>
+                <button id="comprarButton" class="comprar-button"><a href="../../Productos.html">Volver</a></button>
               </div>
             </div>
           </div>
