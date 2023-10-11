@@ -1,21 +1,18 @@
 const fraseContainer = document.querySelector('.frase-container');
 
-// Array de frases desde el archivo de texto
+// Array de frases desde el archivo json
 const frases = [];
 
 // Variable para llevar el control de la frase actual
 let fraseActualIndex = 0;
 
-// Función para cargar frases desde un archivo de texto
+// Función para cargar frases desde un archivo json
 function cargarFrasesDesdeArchivo() {
-    fetch('/frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
-        .then(response => response.text())
+    fetch('/frases.json') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo json
+        .then(response => response.json())
         .then(data => {
-            // Dividir por líneas y eliminar líneas vacías
-            const lineas = data.split('\n').filter(frase => frase.trim() !== '');
-            
-            // Agregar cada línea como una frase al array de frases
-            frases.push(...lineas);
+            // Extraer las frases de la propiedad "frase" en el objeto JSON
+            frases.push(...data.map(item => item.frase));
 
             // Iniciar el carrusel
             iniciarCarrusel();
