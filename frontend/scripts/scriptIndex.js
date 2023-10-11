@@ -10,11 +10,12 @@ let fraseActualIndex = 0;
 const frasesJson = "frases.json";
 console.log("Solicitando JSON desde:", frasesJson);
 function cargarFrasesDesdeArchivo() {
-    fetch('frases.json') // ruta a tu archivo json
+    fetch('./frases.json') // ruta a tu archivo json (dos archivos: .\frases.json para desarrollo local, .\scripts\frases.json para deploy github pages)
         .then(response => response.json())
         .then(data => {
-            // Extraer las frases de la propiedad "frase" en el objeto JSON
-            frases.push(data.map(item => item.frase));
+            data.forEach(item => {
+                frases.push(item.frase);
+            });
 
             // Iniciar el carrusel
             iniciarCarrusel();
