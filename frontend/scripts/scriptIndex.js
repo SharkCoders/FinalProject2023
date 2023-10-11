@@ -8,11 +8,11 @@ let fraseActualIndex = 0;
 
 // Función para cargar frases desde un archivo json
 function cargarFrasesDesdeArchivo() {
-    fetch('../../frases.json') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo json
+    fetch('../../frases.json') // ruta a tu archivo json
         .then(response => response.json())
         .then(data => {
             // Extraer las frases de la propiedad "frase" en el objeto JSON
-            frases.push(...data.map(item => item.frase));
+            frases.push(data.map(item => item.frase));
 
             // Iniciar el carrusel
             iniciarCarrusel();
@@ -30,8 +30,8 @@ function mostrarSiguienteFrase() {
             // Después de establecer el contenido de la nueva frase, desvanécela de nuevo
             setTimeout(() => {
                 fraseContainer.style.opacity = 1;
-            }, 1000); // 1000 milisegundos (1 segundo) para que aparezca gradualmente
-        }, 1000); // 1000 milisegundos (1 segundo) para que se desvanezca gradualmente
+            }, 900); // 900 milisegundos (1 segundo) para que aparezca gradualmente
+        }, 900); // 900 milisegundos (1 segundo) para que se desvanezca gradualmente
     } else {
         // Reiniciar desde la primera frase
         fraseActualIndex = 0;
@@ -42,8 +42,8 @@ function mostrarSiguienteFrase() {
             // Después de establecer el contenido de la nueva frase, desvanécela de nuevo
             setTimeout(() => {
                 fraseContainer.style.opacity = 1;
-            }, 1000); // 1000 milisegundos (1 segundo) para que aparezca gradualmente
-        }, 1000); // 1000 milisegundos (1 segundo) para que se desvanezca gradualmente
+            }, 900); // 900 milisegundos para que aparezca gradualmente
+        }, 900); // 900 milisegundos para que se desvanezca gradualmente
     }
 }
 
