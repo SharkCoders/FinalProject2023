@@ -8,7 +8,7 @@ let fraseActualIndex = 0;
 
 // Función para cargar frases desde un archivo json
 function cargarFrasesDesdeArchivo() {
-    fetch('../../frases.json') // ruta a tu archivo json
+    fetch('frases.json') // ruta a tu archivo json
         .then(response => response.json())
         .then(data => {
             // Extraer las frases de la propiedad "frase" en el objeto JSON
