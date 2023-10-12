@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Precio: $ ${bookInfo.precio}</p>
                         <p>Stock: ${bookInfo.stock}</p>
                         <a href="../../carrito.html" class="btn btn-dark">Comprar</a>
-                        <a href="../../descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
+                        <a href="descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
                     </div>
                 </div>
             </div>
