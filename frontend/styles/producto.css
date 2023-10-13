@@ -20,6 +20,21 @@
   max-width: 600px;
 }
 
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #746b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+
 /*version mobile*/
 @media (max-width: 479px) {
   .product-card {

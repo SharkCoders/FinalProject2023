@@ -10,7 +10,7 @@ let fraseActualIndex = 0;
 const frasesJson = "frases.json";
 console.log("Solicitando JSON desde:", frasesJson);
 function cargarFrasesDesdeArchivo() {
-    fetch('./frases.json') // ruta a tu archivo json (dos archivos: .\frases.json para desarrollo local, .\scripts\frases.json para deploy github pages)
+    fetch('/frases.json') // ruta a tu archivo json (dos archivos: .\frases.json para desarrollo local, .\scripts\frases.json para deploy github pages)
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {

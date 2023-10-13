@@ -74,3 +74,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  window.addEventListener('scroll', function() {
+    var button = document.querySelector('.ir-arriba');
+    if (window.scrollY > 200) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
+  
+// Función para desplazarse hacia arriba cuando se hace clic en el botón
+function goBackToTop() {
+  // Desplázate suavemente hacia la parte superior de la página
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Agrega un evento de escucha al botón "go back to the top"
+document.querySelector('.ir-arriba').addEventListener('click', goBackToTop);
