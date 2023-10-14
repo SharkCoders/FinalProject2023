@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let allBooks = [];
   
     // Cargar los datos desde el archivo JSON local
-    const jsonUrl = "books.json";
+    const jsonUrl = "../assets/books.json";
     console.log("Solicitando JSON desde:", jsonUrl);
     fetch(jsonUrl)
       .then(response => response.json())
