@@ -20,3 +20,33 @@
       font-size: 20px;
       color:white;
     }
+
+
+/* Contenedor para los botones con 5 botones por fila */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5cm; /* Interlineado de 0.5 cm entre los botones */
+  justify-content: center; /* Centrado horizontal */
+  max-width: 1000px; /* Ancho máximo del contenedor para mantener un máximo de 5 botones por fila */
+}
+
+/* Estilo para los botones de categoría */
+.category-button {
+  flex: 1; /* El botón se expandirá para ocupar el espacio disponible en la fila */
+  max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */
+  padding: 10px 20px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 0.5cm;
+}
+
+/* Estilo cuando el cursor pasa sobre el botón */
+.category-button:hover {
+  background-color: #0077cc;
+}
+
+ 
