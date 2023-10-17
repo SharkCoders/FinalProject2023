@@ -1,53 +1,70 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cardContainer = document.getElementById("cardContainer");
-    const searchForm = document.getElementById("search-form");
-    const searchInput = document.getElementById("search-input");
-    let allBooks = [];
-  
-    // Cargar los datos desde el archivo JSON local
-    const jsonUrl = "books.json";
-    console.log("Solicitando JSON desde:", jsonUrl);
-    fetch(jsonUrl)
-      .then(response => response.json())
-      .then(data => {
-        allBooks = data;
-        showBooks(allBooks);
-      })
-      .catch(error => console.error(error));
-  
-    // Manejar la búsqueda cuando se envía el formulario
-    searchForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // Evitar el envío del formulario
-      const searchTerm = searchInput.value.trim().toLowerCase();
-  
-      if (searchTerm === "") {
-        // Si no se ingresa un término de búsqueda, mostrar todos los libros
-        showBooks(allBooks);
+  const cardContainer = document.getElementById("cardContainer");
+  const searchForm = document.getElementById("search-form");
+  const searchInput = document.getElementById("search-input");
+  let allBooks = [];
+
+  // Cargar los datos desde el archivo JSON local
+  const jsonUrl = "/books.json";
+  console.log("Solicitando JSON desde:", jsonUrl);
+  fetch(jsonUrl)
+    .then(response => response.json())
+    .then(data => {
+      allBooks = data;
+      showBooks(allBooks);
+    })
+    .catch(error => console.error(error));
+
+  // Manejar la búsqueda cuando se envía el formulario
+  searchForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evitar el envío del formulario
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    if (searchTerm === "") {
+      // Si no se ingresa un término de búsqueda, mostrar todos los libros
+      showBooks(allBooks);
+    } else {
+      // Filtrar libros por título
+      const filteredBooks = allBooks.filter(book => {
+        const titulo = book.titulo.toLowerCase();
+        return titulo.includes(searchTerm);
+      });
+
+      if (filteredBooks.length === 0) {
+        // Mostrar un mensaje si no se encontraron libros
+        cardContainer.innerHTML = "<p>No se encontraron libros con esas palabras de búsqueda.</p>";
       } else {
-        // Filtrar libros por título
-        const filteredBooks = allBooks.filter(book => {
-          const titulo = book.titulo.toLowerCase();
-          return titulo.includes(searchTerm);
-        });
+        //Mostrar los libros filtrados
         showBooks(filteredBooks);
       }
-    });
-  
-    // Función para mostrar libros
-    function showBooks(books) {
-      cardContainer.innerHTML = ""; // Limpiar resultados anteriores
-      books.forEach(book => {
-        const card = createCard(book);
-        cardContainer.appendChild(card);
-      });
     }
-  
-    // Función para crear una tarjeta de libro
-    function createCard(bookInfo) {
-      const card = document.createElement("div");
-      card.classList.add("product-card");
-  
-      const cardContent = `
+  });
+
+  // Agregar un evento para escuchar cambios en el campo de búsqueda
+searchInput.addEventListener("input", function () {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  if (searchTerm === "") {
+    // Si el campo de búsqueda está vacío, mostrar todos los libros
+    showBooks(allBooks);
+  }
+});
+
+  // Función para mostrar libros
+  function showBooks(books) {
+    cardContainer.innerHTML = ""; // Limpiar resultados anteriores
+    books.forEach(book => {
+      const card = createCard(book);
+      cardContainer.appendChild(card);
+    });
+  }
+
+  // Función para crear una tarjeta de libro
+  function createCard(bookInfo) {
+    const card = document.createElement("div");
+    card.classList.add("product-card");
+
+    const cardContent = `
         <div class="card text-bg-secondary mb-1" style="max-width: 700px;">
   
             <div class="row g-0">
@@ -61,16 +78,36 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Categoría: ${bookInfo.categoria || "Desconocida"}</p>
                         <p>Precio: $ ${bookInfo.precio}</p>
                         <p>Stock: ${bookInfo.stock}</p>
-                        <a href="../templates/carrito.html" class="btn btn-dark">Comprar</a>
-                        <a href="../templates/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
+                        <a href="/carrito.html" class="btn btn-dark">Comprar</a>
+                        <a href="/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
                     </div>
                 </div>
             </div>
         </div>
     `;
-  
-      card.innerHTML = cardContent;
-      return card;
-    }
+
+    card.innerHTML = cardContent;
+    return card;
+  }
+});
+
+window.addEventListener('scroll', function () {
+  var button = document.querySelector('.ir-arriba');
+  if (window.scrollY > 200) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+});
+
+// Función para desplazarse hacia arriba cuando se hace clic en el botón
+function goBackToTop() {
+  // Desplázate suavemente hacia la parte superior de la página
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
-  
+}
+
+// Agrega un evento de escucha al botón "go back to the top"
+document.querySelector('.ir-arriba').addEventListener('click', goBackToTop);

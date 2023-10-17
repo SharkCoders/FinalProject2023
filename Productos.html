@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra selección</title>
-  <link rel="shortcut icon" href="../assets/Imagenes/favicon-32x32.png">
-  <link rel="stylesheet" href="../styles/estilos.css">
-  <link rel="stylesheet" href="../styles/producto.css">
+  <link rel="shortcut icon" href="./frontend/assets/Imagenes/favicon-32x32.png">
+  <link rel="stylesheet" href="./frontend/styles/estilos.css">
+  <link rel="stylesheet" href="./frontend/styles/producto.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="../assets/logo.png" alt="Logo">
+        <a href="./index.html"><img src="./frontend/assets/logo.png" alt="Logo"></a>
       </div>
       <input type="checkbox" id="menu-toggle" class="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
@@ -92,21 +92,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../assets/Imagenes/LibroSlider1.jpg" class="d-block w-100" alt="...">
+        <img src="./frontend/assets/Imagenes/LibroSlider1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>“Algunos libros son probados, otros devorados, poquísimos masticados y digeridos”.</h5>
           <p>Sir Francis Bacon</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/Imagenes/LibroSlider2.jpg" class="d-block w-100" alt="...">
+        <img src="./frontend/assets/Imagenes/LibroSlider2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>“Amar la lectura es trocar horas de hastío por horas de inefable y deliciosa compañía”.</h5>
           <p>John Fitzgerald Kennedy.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/Imagenes/LibroSlider3.jpg" class="d-block w-100" alt="...">
+        <img src="./frontend/assets/Imagenes/LibroSlider3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>“Aprender a leer es lo más importante que me ha pasado en la vida”.</h5>
           <p>Mario Vargas Llosa</p>
@@ -127,19 +127,30 @@
   <main>
     <!--inicio Buscador-->
     <br>
-<!--dinámico-->
-<form class="d-flex" id="search-form">
-  <!-- Barra de búsqueda -->
-  <input class="form-control me-2" type="search" id="search-input" aria-label="Search">
-  <button class="btn btn-light" type="submit">Buscar</button>
-</form>
-<br>
+    <!--dinámico-->
+    <form class="d-flex" id="search-form">
+      <!-- Barra de búsqueda -->
+      <input class="form-control me-2" type="search" id="search-input" aria-label="Search">
+      <button class="btn btn-light" type="submit">Buscar</button>
+    </form>
+    <br>
 
-<div id="cardContainer"></div>
-<script src="../scripts/scriptProductos.js"></script>
+    <!-- Boton hacia arriba -->
+    <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+      </span>
+    </a>
+
+    <!--Cards dinámicas de libros-->
+    <div id="cardContainer"></div>
 
     <!--estático-->
-      <!--selector de categoría-->
+    <!--selector de categoría-->
     <!--<form class="d-flex">
       <div class="Buscador-categoria">
         <label for="categoria-select">
@@ -155,14 +166,14 @@
         </select>
       </div>
       <!--fin selector-->
-      <!--<input class="form-control me-2" type="search" aria-label="Search">
+    <!--<input class="form-control me-2" type="search" aria-label="Search">
       <button class="btn btn-light" type="submit">Buscar</button>
     </form>
     <section>-->
     <!--fin Buscador-->
 
-      <!---galeria de productos--->
-      <!--cards estáticas--><!--
+    <!---galeria de productos--->
+    <!--cards estáticas--><!--
         <div class="product-card fantasia">
           <img src="../assets/Imagenes/avatar.jpg" alt="Producto 1">
           <h2>Libro de Avatar</h2>
@@ -526,7 +537,7 @@
 
     <div class="column">
       <h3>Formas de pago</h3>
-      <img class="column-img" src="../assets/Imagenes/pagos.png" alt="" >
+      <img class="column-img" src="./frontend/assets/Imagenes/pagos.png" alt="">
       <p><span>&#187;</span> Envios a todo el pais<br>
         <span>&#187;</span> Costos de envío según C.P.<br>
       </p>
@@ -542,7 +553,7 @@
 </html>
 
 <!--SCRIPTS-->
-<script src="../scripts/scriptProductos.js"></script>
+<script src="/frontend/scripts/scriptProductos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
