@@ -66,9 +66,6 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
- 
-
-
 }
 
 
@@ -80,9 +77,8 @@ footer {
   margin-right: 20px;
   text-align: center;
   box-sizing: border-box;
- 
- 
 }
+
 /*Footer  version celular*/
 @media (max-width: 479px) {
   footer{
@@ -104,9 +100,8 @@ footer {
  margin-top: 5px;
  margin-bottom: 5px;
  height: 32px;
-
-
 }
+
 .column:last-child {
   margin-right: 0;
 }

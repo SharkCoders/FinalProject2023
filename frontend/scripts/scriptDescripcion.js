@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p class="card-text">Autor: ${book.autor || "Desconocido"}</p>
                 <p class="card-text">Categoría: ${book.categoria || "Desconocida"}</p>
                 <p class="animado">Sinopsis: ${book.descripcion}</p>
-                <p class="card-text2">Tan Solo: $ ${book.precio}</p>
+                <p class="card-text2">Precio: $ ${book.precio}</p>
                 <p class="card-text">Stock Disponible: ${book.stock} Unidades</p>
                 
                 <button id="comprarButton" class="comprar-button"><a href="../../carrito.html">Comprar</a></button>
-
+                <button id="comprarButton" class="comprar-button"><a href="../../Productos.html">Volver</a></button>
               </div>
             </div>
           </div>
