@@ -28,11 +28,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 /* Estilos para el contenedor de categorías */
 #category-buttons {
   display: flex;
   gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
+  margin-top: 20px;
 }
 
 /* Estilos para el contenedor de botones */
