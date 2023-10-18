@@ -11,3 +11,33 @@ La finalidad del mismo es crear una página web navegable con código JavaScript
 La página web es capaz de mostrar el contenido a la venta con sus datos más relevantes y con la opción de consultar más información. 
 Además, ofrece la opción de registro de usuarios, con la finalidad de distribuir newsletters, permitir que el usuario haga una reseña de los libros que conoce o compró, y comprar en sí mismo.
 
+# Estado del proyecto
+
+🚧 Proyecto en construcción 🚧
+El proyecto momentáneamente se encuentra en desarrollo, pero como describíamos más arriba, posee un frontend y un backend con base de datos funcionales.
+
+# 💻 Funcionalidades
+
+Funcionalidad 1: venta de libros, el LocalStorage almacena los libros a la venta con todos sus datos (nombre, descripción, precio, stock, autor, categoría, etc.)
+Funcionalidad 2: registro de usuarios, el registro de usuarios se utilizará para el perfil del usuario comprador, el usuario que desea dejar reseñas y el que desea recibir novedades. Si bien está disponible la opción en el frontend, aún no comunica con la base de datos.
+Funcionalidad 3: desde el backend, el usuario administrador puede modificar la base de datos de los libros y usuarios. El usuario comprador, una vez registrado, puede comprar, dejar reseñas y registrarse para recibir novedades. El carrito de compras almacena los libros seleccionados por el comprador y deriva en la página de pago.
+
+# Acceso al proyecto
+
+🛠️ Si bien no está finalizado, se puede visitar el siguiente sitio online: https://sharkcoders.github.io/FinalProject2023/
+
+# 📁 Tecnologías
+
+* JavaScript
+* Python
+* MySQL
+
+# 👷‍♀️👷‍♂️ Contributors
+* Marcelo Molina
+* Jorge Pegoraro
+* Elias Oro
+* Analía Pellicer
+* Pamela Ponce
+* Nahir Ñañez
+* Ivette Nobiltá
+* Leonardo Plaza
