@@ -1,0 +1,108 @@
+/* ESTILOS DE PÁGINA DE PRODUCTO */
+
+.carousel-caption {
+  background-color: #b3b0b0;
+}
+
+/* Línea de carrusel o slider */
+.linea {
+  max-width: 100%;
+  height: 15px;
+  background-color: #746b6b;
+}
+
+.product-card p {
+  font-size: 20px;
+  color: white;
+}
+
+.card {
+  max-width: 600px;
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #746b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+
+/*version mobile*/
+@media (max-width: 479px) {
+  .product-card {
+    max-width: 300px;
+    }
+    #carouselExampleCaptions{
+      display: none;
+    }
+}
+
+/*version tablet*/
+@media (min-width: 480px) and (max-width: 1023px) {
+  .card {
+    max-width: 310px;
+    }
+}
+    #bookCardDescription{
+      font-size: 20px;
+      color:white;
+    }
+
+
+ /* Contenedor para los botones */
+ /* Estilos para el contenedor general */
+#cont-de-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Estilos para el contenedor de categorías */
+#category-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
+  margin-top: 20px;
+}
+
+/* Estilos para el contenedor de categorías */
+#category-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
+  margin-top: 20px;
+
+  /* Estilos para el contenedor de botones */
+.button-container {
+  flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
+  max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */
+
+  
+} 
+.category-button {
+  /* Estilos específicos para botones oscuros */
+  background-color: #596169; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco u otro color deseado */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 0.5cm;
+}
+
+/* Estilo cuando el cursor pasa sobre el botón */
+ .category-button:hover {
+  background-color: #03182c; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco */
+ }
+
+
+
+
