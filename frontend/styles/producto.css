@@ -22,21 +22,31 @@
     }
 
 
-/* Contenedor para los botones con 5 botones por fila */
-.button-container {
+ /* Contenedor para los botones */
+ /* Estilos para el contenedor general */
+#cont-de-cat {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5cm; /* Interlineado de 0.5 cm entre los botones */
-  justify-content: center; /* Centrado horizontal */
-  max-width: 1000px; /* Ancho máximo del contenedor para mantener un máximo de 5 botones por fila */
+  flex-direction: column;
+  align-items: center;
+}
+/* Estilos para el contenedor de categorías */
+#category-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
 }
 
-/* Estilo para los botones de categoría */
-.category-button {
-  flex: 1; /* El botón se expandirá para ocupar el espacio disponible en la fila */
+/* Estilos para el contenedor de botones */
+.button-container {
+  flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
   max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */
+  
+  
+} 
+.category-button {
+  /* Estilos específicos para botones oscuros */
+  background-color: #596169; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco u otro color deseado */
   padding: 10px 20px;
-  background-color: #00aaff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -45,8 +55,8 @@
 }
 
 /* Estilo cuando el cursor pasa sobre el botón */
-.category-button:hover {
-  background-color: #0077cc;
-}
+ .category-button:hover {
+  background-color: #03182c; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco */
+ }
 
- 
