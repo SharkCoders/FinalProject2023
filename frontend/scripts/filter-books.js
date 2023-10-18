@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Función para crear una tarjeta de libro esta la modifiqué, porque con tu código declarado, creaba una tarjeta nueva sobre la anterior
+  // Función para crear una tarjeta de libro 
   function createCard(bookInfo) {
     const card = document.createElement('div');
     card.classList.add('product-card');
