@@ -2,7 +2,7 @@
     {
       "autor": "Chinua Achebe",
       "pais": "Nigeria",
-      "portada": "../assets/bookImages/things-fall-apart.jpg",
+      "portada": "./frontend/assets/bookImages/things-fall-apart.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart",
       "paginas": 209,
@@ -17,7 +17,7 @@
     {
       "autor": "Hans Christian Andersen",
       "pais": "Denmark",
-      "portada": "../assets/bookImages/fairy-tales.jpg",
+      "portada": "./frontend/assets/bookImages/fairy-tales.jpg",
       "idioma": "Danish",
       "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.",
       "paginas": 784,
@@ -32,7 +32,7 @@
     {
       "autor": "Dante Alighieri",
       "pais": "Italy",
-      "portada": "../assets/bookImages/the-divine-comedy.jpg",
+      "portada": "./frontend/assets/bookImages/the-divine-comedy.jpg",
       "idioma": "Italian",
       "link": "https://en.wikipedia.org/wiki/Divine_Comedy",
       "paginas": 928,
@@ -47,7 +47,7 @@
     {
       "autor": "Unknown",
       "pais": "Sumer and Akkadian Empire",
-      "portada": "../assets/bookImages/the-epic-of-gilgamesh.jpg",
+      "portada": "./frontend/assets/bookImages/the-epic-of-gilgamesh.jpg",
       "idioma": "Akkadian",
       "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh",
       "paginas": 160,
@@ -61,7 +61,7 @@
     {
       "autor": "Unknown",
       "pais": "Achaemenid Empire",
-      "portada": "../assets/bookImages/the-book-of-job.jpg",
+      "portada": "./frontend/assets/bookImages/the-book-of-job.jpg",
       "idioma": "Hebrew",
       "link": "https://en.wikipedia.org/wiki/Book_of_Job",
       "paginas": 176,
@@ -75,7 +75,7 @@
     {
       "autor": "Unknown",
       "pais": "India/Iran/Iraq/Egypt/Tajikistan",
-      "portada": "../assets/bookImages/one-thousand-and-one-nights.jpg",
+      "portada": "./frontend/assets/bookImages/one-thousand-and-one-nights.jpg",
       "idioma": "Arabic",
       "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights",
       "paginas": 288,
@@ -90,7 +90,7 @@
     {
       "autor": "Unknown",
       "pais": "Iceland",
-      "portada": "../assets/bookImages/njals-saga.jpg",
+      "portada": "./frontend/assets/bookImages/njals-saga.jpg",
       "idioma": "Old Norse",
       "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga",
       "paginas": 384,
@@ -105,7 +105,7 @@
     {
       "autor": "Jane Austen",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/pride-and-prejudice.jpg",
+      "portada": "./frontend/assets/bookImages/pride-and-prejudice.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
       "paginas": 226,
@@ -120,7 +120,7 @@
     {
       "autor": "Honor de Balzac",
       "pais": "France",
-      "portada": "../assets/bookImages/le-pere-goriot.jpg",
+      "portada": "./frontend/assets/bookImages/le-pere-goriot.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot",
       "paginas": 443,
@@ -135,7 +135,7 @@
     {
       "autor": "Samuel Beckett",
       "pais": "Republic of Ireland",
-      "portada": "../assets/bookImages/molloy-malone-dies-the-unnamable.jpg",
+      "portada": "./frontend/assets/bookImages/molloy-malone-dies-the-unnamable.jpg",
       "idioma": "French, English",
       "link": "https://en.wikipedia.org/wiki/Molloy_(novel)",
       "paginas": 256,
@@ -150,7 +150,7 @@
     {
       "autor": "Giovanni Boccaccio",
       "pais": "Italy",
-      "portada": "../assets/bookImages/the-decameron.jpg",
+      "portada": "./frontend/assets/bookImages/the-decameron.jpg",
       "idioma": "Italian",
       "link": "https://en.wikipedia.org/wiki/The_Decameron",
       "paginas": 1024,
@@ -165,7 +165,7 @@
     {
       "autor": "Jorge Luis Borges",
       "pais": "Argentina",
-      "portada": "../assets/bookImages/ficciones.jpg",
+      "portada": "./frontend/assets/bookImages/ficciones.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/Ficciones",
       "paginas": 224,
@@ -180,7 +180,7 @@
     {
       "autor": "Emily Bronte",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/wuthering-heights.jpg",
+      "portada": "./frontend/assets/bookImages/wuthering-heights.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Wuthering_Heights",
       "paginas": 342,
@@ -195,7 +195,7 @@
     {
       "autor": "Albert Camus",
       "pais": "Algeria, French Empire",
-      "portada": "../assets/bookImages/l-etranger.jpg",
+      "portada": "./frontend/assets/bookImages/l-etranger.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)",
       "paginas": 185,
@@ -210,7 +210,7 @@
     {
       "autor": "Paul Celan",
       "pais": "Romania, France",
-      "portada": "../assets/bookImages/poems-paul-celan.jpg",
+      "portada": "./frontend/assets/bookImages/poems-paul-celan.jpg",
       "idioma": "German",
       "link": "...",
       "paginas": 320,
@@ -225,7 +225,7 @@
     {
       "autor": "Louis-Ferdinand Celine",
       "pais": "France",
-      "portada": "../assets/bookImages/voyage-au-bout-de-la-nuit.jpg",
+      "portada": "./frontend/assets/bookImages/voyage-au-bout-de-la-nuit.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night",
       "paginas": 505,
@@ -240,7 +240,7 @@
     {
       "autor": "Miguel de Cervantes",
       "pais": "Spain",
-      "portada": "../assets/bookImages/don-quijote-de-la-mancha.jpg",
+      "portada": "./frontend/assets/bookImages/don-quijote-de-la-mancha.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/Don_Quixote",
       "paginas": 1056,
@@ -255,7 +255,7 @@
     {
       "autor": "Geoffrey Chaucer",
       "pais": "England",
-      "portada": "../assets/bookImages/the-canterbury-tales.jpg",
+      "portada": "./frontend/assets/bookImages/the-canterbury-tales.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales",
       "paginas": 544,
@@ -270,7 +270,7 @@
     {
       "autor": "Anton Chekhov",
       "pais": "Russia",
-      "portada": "../assets/bookImages/stories-of-anton-chekhov.jpg",
+      "portada": "./frontend/assets/bookImages/stories-of-anton-chekhov.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov",
       "paginas": 194,
@@ -285,7 +285,7 @@
     {
       "autor": "Joseph Conrad",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/nostromo.jpg",
+      "portada": "./frontend/assets/bookImages/nostromo.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Nostromo",
       "paginas": 320,
@@ -300,7 +300,7 @@
     {
       "autor": "Charles Dickens",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/great-expectations.jpg",
+      "portada": "./frontend/assets/bookImages/great-expectations.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Great_Expectations",
       "paginas": 194,
@@ -315,7 +315,7 @@
     {
       "autor": "Denis Diderot",
       "pais": "France",
-      "portada": "../assets/bookImages/jacques-the-fatalist.jpg",
+      "portada": "./frontend/assets/bookImages/jacques-the-fatalist.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist",
       "paginas": 596,
@@ -330,7 +330,7 @@
     {
       "autor": "Alfred Doblin",
       "pais": "Germany",
-      "portada": "../assets/bookImages/berlin-alexanderplatz.jpg",
+      "portada": "./frontend/assets/bookImages/berlin-alexanderplatz.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz",
       "paginas": 600,
@@ -345,7 +345,7 @@
     {
       "autor": "Fyodor Dostoievsky",
       "pais": "Russia",
-      "portada": "../assets/bookImages/crime-and-punishment.jpg",
+      "portada": "./frontend/assets/bookImages/crime-and-punishment.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment",
       "paginas": 551,
@@ -360,7 +360,7 @@
     {
       "autor": "Fyodor Dostoievsky",
       "pais": "Russia",
-      "portada": "../assets/bookImages/the-idiot.jpg",
+      "portada": "./frontend/assets/bookImages/the-idiot.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/The_Idiot",
       "paginas": 656,
@@ -375,7 +375,7 @@
     {
       "autor": "Fyodor Dostoievsky",
       "pais": "Russia",
-      "portada": "../assets/bookImages/the-possessed.jpg",
+      "portada": "./frontend/assets/bookImages/the-possessed.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)",
       "paginas": 768,
@@ -390,7 +390,7 @@
     {
       "autor": "Fyodor Dostoievsky",
       "pais": "Russia",
-      "portada": "../assets/bookImages/the-brothers-karamazov.jpg",
+      "portada": "./frontend/assets/bookImages/the-brothers-karamazov.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
       "paginas": 824,
@@ -405,7 +405,7 @@
     {
       "autor": "George Eliot",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/middlemarch.jpg",
+      "portada": "./frontend/assets/bookImages/middlemarch.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Middlemarch",
       "paginas": 800,
@@ -420,7 +420,7 @@
     {
       "autor": "Ralph Ellison",
       "pais": "United States",
-      "portada": "../assets/bookImages/invisible-man.jpg",
+      "portada": "./frontend/assets/bookImages/invisible-man.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Invisible_Man",
       "paginas": 581,
@@ -435,7 +435,7 @@
     {
       "autor": "Euripides",
       "pais": "Greece",
-      "portada": "../assets/bookImages/medea.jpg",
+      "portada": "./frontend/assets/bookImages/medea.jpg",
       "idioma": "Greek",
       "link": "https://en.wikipedia.org/wiki/Medea_(play)",
       "paginas": 104,
@@ -450,7 +450,7 @@
     {
       "autor": "William Faulkner",
       "pais": "United States",
-      "portada": "../assets/bookImages/absalom-absalom.jpg",
+      "portada": "./frontend/assets/bookImages/absalom-absalom.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!",
       "paginas": 313,
@@ -465,7 +465,7 @@
     {
       "autor": "William Faulkner",
       "pais": "United States",
-      "portada": "../assets/bookImages/the-sound-and-the-fury.jpg",
+      "portada": "./frontend/assets/bookImages/the-sound-and-the-fury.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury",
       "paginas": 326,
@@ -480,7 +480,7 @@
     {
       "autor": "Gustave Flaubert",
       "pais": "France",
-      "portada": "../assets/bookImages/madame-bovary.jpg",
+      "portada": "./frontend/assets/bookImages/madame-bovary.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Madame_Bovary",
       "paginas": 528,
@@ -495,7 +495,7 @@
     {
       "autor": "Gustave Flaubert",
       "pais": "France",
-      "portada": "../assets/bookImages/l-education-sentimentale.jpg",
+      "portada": "./frontend/assets/bookImages/l-education-sentimentale.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Sentimental_Education",
       "paginas": 606,
@@ -510,7 +510,7 @@
     {
       "autor": "Federico Garcia Lorca",
       "pais": "Spain",
-      "portada": "../assets/bookImages/gypsy-ballads.jpg",
+      "portada": "./frontend/assets/bookImages/gypsy-ballads.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads",
       "paginas": 218,
@@ -525,7 +525,7 @@
     {
       "autor": "Gabriel Garcia Marquez",
       "pais": "Colombia",
-      "portada": "../assets/bookImages/one-hundred-years-of-solitude.jpg",
+      "portada": "./frontend/assets/bookImages/one-hundred-years-of-solitude.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
       "paginas": 417,
@@ -540,7 +540,7 @@
     {
       "autor": "Gabriel Garcia Marquez",
       "pais": "Colombia",
-      "portada": "../assets/bookImages/love-in-the-time-of-cholera.jpg",
+      "portada": "./frontend/assets/bookImages/love-in-the-time-of-cholera.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera",
       "paginas": 368,
@@ -555,7 +555,7 @@
     {
       "autor": "Johann Wolfgang von Goethe",
       "pais": "Saxe-Weimar",
-      "portada": "../assets/bookImages/faust.jpg",
+      "portada": "./frontend/assets/bookImages/faust.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust",
       "paginas": 158,
@@ -570,7 +570,7 @@
     {
       "autor": "Nikolai Gogol",
       "pais": "Russia",
-      "portada": "../assets/bookImages/dead-souls.jpg",
+      "portada": "./frontend/assets/bookImages/dead-souls.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/Dead_Souls",
       "paginas": 432,
@@ -585,7 +585,7 @@
     {
       "autor": "Gunter Grass",
       "pais": "Germany",
-      "portada": "../assets/bookImages/the-tin-drum.jpg",
+      "portada": "./frontend/assets/bookImages/the-tin-drum.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/The_Tin_Drum",
       "paginas": 600,
@@ -600,7 +600,7 @@
     {
       "autor": "Joao Guimaraes Rosa",
       "pais": "Brazil",
-      "portada": "../assets/bookImages/the-devil-to-pay-in-the-backlands.jpg",
+      "portada": "./frontend/assets/bookImages/the-devil-to-pay-in-the-backlands.jpg",
       "idioma": "Portuguese",
       "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands",
       "paginas": 494,
@@ -615,7 +615,7 @@
     {
       "autor": "Knut Hamsun",
       "pais": "Norway",
-      "portada": "../assets/bookImages/hunger.jpg",
+      "portada": "./frontend/assets/bookImages/hunger.jpg",
       "idioma": "Norwegian",
       "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)",
       "paginas": 176,
@@ -630,7 +630,7 @@
     {
       "autor": "Ernest Hemingway",
       "pais": "United States",
-      "portada": "../assets/bookImages/the-old-man-and-the-sea.jpg",
+      "portada": "./frontend/assets/bookImages/the-old-man-and-the-sea.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea",
       "paginas": 128,
@@ -645,7 +645,7 @@
     {
       "autor": "Homer",
       "pais": "Greece",
-      "portada": "../assets/bookImages/the-iliad-of-homer.jpg",
+      "portada": "./frontend/assets/bookImages/the-iliad-of-homer.jpg",
       "idioma": "Greek",
       "link": "https://en.wikipedia.org/wiki/Iliad",
       "paginas": 608,
@@ -660,7 +660,7 @@
     {
       "autor": "Homer",
       "pais": "Greece",
-      "portada": "../assets/bookImages/the-odyssey-of-homer.jpg",
+      "portada": "./frontend/assets/bookImages/the-odyssey-of-homer.jpg",
       "idioma": "Greek",
       "link": "https://en.wikipedia.org/wiki/Odyssey",
       "paginas": 374,
@@ -675,7 +675,7 @@
     {
       "autor": "Henrik Ibsen",
       "pais": "Norway",
-      "portada": "../assets/bookImages/a-Dolls-house.jpg",
+      "portada": "./frontend/assets/bookImages/a-Dolls-house.jpg",
       "idioma": "Norwegian",
       "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House",
       "paginas": 68,
@@ -690,7 +690,7 @@
     {
       "autor": "James Joyce",
       "pais": "Irish Free State",
-      "portada": "../assets/bookImages/ulysses.jpg",
+      "portada": "./frontend/assets/bookImages/ulysses.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)",
       "paginas": 228,
@@ -705,7 +705,7 @@
     {
       "autor": "Franz Kafka",
       "pais": "Czechoslovakia",
-      "portada": "../assets/bookImages/stories-of-franz-kafka.jpg",
+      "portada": "./frontend/assets/bookImages/stories-of-franz-kafka.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories",
       "paginas": 488,
@@ -720,7 +720,7 @@
     {
       "autor": "Franz Kafka",
       "pais": "Czechoslovakia",
-      "portada": "../assets/bookImages/the-trial.jpg",
+      "portada": "./frontend/assets/bookImages/the-trial.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/The_Trial",
       "paginas": 160,
@@ -735,7 +735,7 @@
     {
       "autor": "Franz Kafka",
       "pais": "Czechoslovakia",
-      "portada": "../assets/bookImages/the-castle.jpg",
+      "portada": "./frontend/assets/bookImages/the-castle.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)",
       "paginas": 352,
@@ -750,7 +750,7 @@
     {
       "autor": "Kalidasa",
       "pais": "India",
-      "portada": "../assets/bookImages/the-recognition-of-shakuntala.jpg",
+      "portada": "./frontend/assets/bookImages/the-recognition-of-shakuntala.jpg",
       "idioma": "Sanskrit",
       "link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam",
       "paginas": 147,
@@ -765,7 +765,7 @@
     {
       "autor": "Yasunari Kawabata",
       "pais": "Japan",
-      "portada": "../assets/bookImages/the-sound-of-the-mountain.jpg",
+      "portada": "./frontend/assets/bookImages/the-sound-of-the-mountain.jpg",
       "idioma": "Japanese",
       "link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain",
       "paginas": 288,
@@ -780,7 +780,7 @@
     {
       "autor": "Nikos Kazantzakis",
       "pais": "Greece",
-      "portada": "../assets/bookImages/zorba-the-greek.jpg",
+      "portada": "./frontend/assets/bookImages/zorba-the-greek.jpg",
       "idioma": "Greek",
       "link": "https://en.wikipedia.org/wiki/Zorba_the_Greek",
       "paginas": 368,
@@ -795,7 +795,7 @@
     {
       "autor": "D. H. Lawrence",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/sons-and-lovers.jpg",
+      "portada": "./frontend/assets/bookImages/sons-and-lovers.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Sons_and_Lovers",
       "paginas": 432,
@@ -810,7 +810,7 @@
     {
       "autor": "Halld\u00f3r Laxness",
       "pais": "Iceland",
-      "portada": "../assets/bookImages/independent-people.jpg",
+      "portada": "./frontend/assets/bookImages/independent-people.jpg",
       "idioma": "Icelandic",
       "link": "https://en.wikipedia.org/wiki/Independent_People",
       "paginas": 470,
@@ -825,7 +825,7 @@
     {
       "autor": "Giacomo Leopardi",
       "pais": "Italy",
-      "portada": "../assets/bookImages/poems-giacomo-leopardi.jpg",
+      "portada": "./frontend/assets/bookImages/poems-giacomo-leopardi.jpg",
       "idioma": "Italian",
       "link": "",
       "paginas": 184,
@@ -840,7 +840,7 @@
     {
       "autor": "Doris Lessing",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/the-golden-notebook.jpg",
+      "portada": "./frontend/assets/bookImages/the-golden-notebook.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/The_Golden_Notebook",
       "paginas": 688,
@@ -855,7 +855,7 @@
     {
       "autor": "Astrid Lindgren",
       "pais": "Sweden",
-      "portada": "../assets/bookImages/pippi-longstocking.jpg",
+      "portada": "./frontend/assets/bookImages/pippi-longstocking.jpg",
       "idioma": "Swedish",
       "link": "https://en.wikipedia.org/wiki/Pippi_Longstocking",
       "paginas": 160,
@@ -870,7 +870,7 @@
     {
       "autor": "Lu Xun",
       "pais": "China",
-      "portada": "../assets/bookImages/diary-of-a-madman.jpg",
+      "portada": "./frontend/assets/bookImages/diary-of-a-madman.jpg",
       "idioma": "Chinese",
       "link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary",
       "paginas": 389,
@@ -885,7 +885,7 @@
     {
       "autor": "Naguib Mahfouz",
       "pais": "Egypt",
-      "portada": "../assets/bookImages/children-of-gebelawi.jpg",
+      "portada": "./frontend/assets/bookImages/children-of-gebelawi.jpg",
       "idioma": "Arabic",
       "link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi",
       "paginas": 355,
@@ -900,7 +900,7 @@
     {
       "autor": "Thomas Mann",
       "pais": "Germany",
-      "portada": "../assets/bookImages/buddenbrooks.jpg",
+      "portada": "./frontend/assets/bookImages/buddenbrooks.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/Buddenbrooks",
       "paginas": 736,
@@ -915,7 +915,7 @@
     {
       "autor": "Thomas Mann",
       "pais": "Germany",
-      "portada": "../assets/bookImages/the-magic-mountain.jpg",
+      "portada": "./frontend/assets/bookImages/the-magic-mountain.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/The_Magic_Mountain",
       "paginas": 720,
@@ -930,7 +930,7 @@
     {
       "autor": "Herman Melville",
       "pais": "United States",
-      "portada": "../assets/bookImages/moby-dick.jpg",
+      "portada": "./frontend/assets/bookImages/moby-dick.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Moby-Dick",
       "paginas": 378,
@@ -945,7 +945,7 @@
     {
       "autor": "Michel de Montaigne",
       "pais": "France",
-      "portada": "../assets/bookImages/essais.jpg",
+      "portada": "./frontend/assets/bookImages/essais.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
       "paginas": 404,
@@ -960,7 +960,7 @@
     {
       "autor": "Elsa Morante",
       "pais": "Italy",
-      "portada": "../assets/bookImages/history.jpg",
+      "portada": "./frontend/assets/bookImages/history.jpg",
       "idioma": "Italian",
       "link": "https://en.wikipedia.org/wiki/History_(novel)",
       "paginas": 600,
@@ -975,7 +975,7 @@
     {
       "autor": "Toni Morrison",
       "pais": "United States",
-      "portada": "../assets/bookImages/beloved.jpg",
+      "portada": "./frontend/assets/bookImages/beloved.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Beloved_(novel)",
       "paginas": 321,
@@ -990,7 +990,7 @@
     {
       "autor": "Murasaki Shikibu",
       "pais": "Japan",
-      "portada": "../assets/bookImages/the-tale-of-genji.jpg",
+      "portada": "./frontend/assets/bookImages/the-tale-of-genji.jpg",
       "idioma": "Japanese",
       "link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
       "paginas": 1360,
@@ -1005,7 +1005,7 @@
     {
       "autor": "Robert Musil",
       "pais": "Austria",
-      "portada": "../assets/bookImages/the-man-without-qualities.jpg",
+      "portada": "./frontend/assets/bookImages/the-man-without-qualities.jpg",
       "idioma": "German",
       "link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities",
       "paginas": 365,
@@ -1020,7 +1020,7 @@
     {
       "autor": "Vladimir Nabokov",
       "pais": "Russia/United States",
-      "portada": "../assets/bookImages/lolita.jpg",
+      "portada": "./frontend/assets/bookImages/lolita.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Lolita",
       "paginas": 317,
@@ -1035,7 +1035,7 @@
     {
       "autor": "George Orwell",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/nineteen-eighty-four.jpg",
+      "portada": "./frontend/assets/bookImages/nineteen-eighty-four.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
       "paginas": 272,
@@ -1050,7 +1050,7 @@
     {
       "autor": "Ovid",
       "pais": "Roman Empire",
-      "portada": "../assets/bookImages/the-metamorphoses-of-ovid.jpg",
+      "portada": "./frontend/assets/bookImages/the-metamorphoses-of-ovid.jpg",
       "idioma": "Classical Latin",
       "link": "https://en.wikipedia.org/wiki/Metamorphoses",
       "paginas": 576,
@@ -1065,7 +1065,7 @@
     {
       "autor": "Fernando Pessoa",
       "pais": "Portugal",
-      "portada": "../assets/bookImages/the-book-of-disquiet.jpg",
+      "portada": "./frontend/assets/bookImages/the-book-of-disquiet.jpg",
       "idioma": "Portuguese",
       "link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet",
       "paginas": 272,
@@ -1080,7 +1080,7 @@
     {
       "autor": "Edgar Allan Poe",
       "pais": "United States",
-      "portada": "../assets/bookImages/tales-and-poems-of-edgar-allan-poe.jpg",
+      "portada": "./frontend/assets/bookImages/tales-and-poems-of-edgar-allan-poe.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales",
       "paginas": 842,
@@ -1095,7 +1095,7 @@
     {
       "autor": "Marcel Proust",
       "pais": "France",
-      "portada": "../assets/bookImages/a-la-recherche-du-temps-perdu.jpg",
+      "portada": "./frontend/assets/bookImages/a-la-recherche-du-temps-perdu.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time",
       "paginas": 2408,
@@ -1110,7 +1110,7 @@
     {
       "autor": "Francois Rabelais",
       "pais": "France",
-      "portada": "../assets/bookImages/gargantua-and-pantagruel.jpg",
+      "portada": "./frontend/assets/bookImages/gargantua-and-pantagruel.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel",
       "paginas": 623,
@@ -1125,7 +1125,7 @@
     {
       "autor": "Juan Rulfo",
       "pais": "Mexico",
-      "portada": "../assets/bookImages/pedro-paramo.jpg",
+      "portada": "./frontend/assets/bookImages/pedro-paramo.jpg",
       "idioma": "Spanish",
       "link": "https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo",
       "paginas": 124,
@@ -1140,7 +1140,7 @@
     {
       "autor": "Rumi",
       "pais": "Sultanate of Rum",
-      "portada": "../assets/bookImages/the-masnavi.jpg",
+      "portada": "./frontend/assets/bookImages/the-masnavi.jpg",
       "idioma": "Persian",
       "link": "https://en.wikipedia.org/wiki/Masnavi",
       "paginas": 438,
@@ -1155,7 +1155,7 @@
     {
       "autor": "Salman Rushdie",
       "pais": "United Kingdom, India",
-      "portada": "../assets/bookImages/midnights-children.jpg",
+      "portada": "./frontend/assets/bookImages/midnights-children.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children",
       "paginas": 536,
@@ -1170,7 +1170,7 @@
     {
       "autor": "Saadi",
       "pais": "Persia, Persian Empire",
-      "portada": "../assets/bookImages/bostan.jpg",
+      "portada": "./frontend/assets/bookImages/bostan.jpg",
       "idioma": "Persian",
       "link": "https://en.wikipedia.org/wiki/Bustan_(book)",
       "paginas": 298,
@@ -1185,7 +1185,7 @@
     {
       "autor": "Tayeb Salih",
       "pais": "Sudan",
-      "portada": "../assets/bookImages/season-of-migration-to-the-north.jpg",
+      "portada": "./frontend/assets/bookImages/season-of-migration-to-the-north.jpg",
       "idioma": "Arabic",
       "link": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North",
       "paginas": 139,
@@ -1200,7 +1200,7 @@
     {
       "autor": "Jose Saramago",
       "pais": "Portugal",
-      "portada": "../assets/bookImages/blindness.jpg",
+      "portada": "./frontend/assets/bookImages/blindness.jpg",
       "idioma": "Portuguese",
       "link": "https://en.wikipedia.org/wiki/Blindness_(novel)",
       "paginas": 352,
@@ -1215,7 +1215,7 @@
     {
       "autor": "William Shakespeare",
       "pais": "England",
-      "portada": "../assets/bookImages/hamlet.jpg",
+      "portada": "./frontend/assets/bookImages/hamlet.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Hamlet",
       "paginas": 432,
@@ -1230,7 +1230,7 @@
     {
       "autor": "William Shakespeare",
       "pais": "England",
-      "portada": "../assets/bookImages/king-lear.jpg",
+      "portada": "./frontend/assets/bookImages/king-lear.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/King_Lear",
       "paginas": 384,
@@ -1245,7 +1245,7 @@
     {
       "autor": "William Shakespeare",
       "pais": "England",
-      "portada": "../assets/bookImages/othello.jpg",
+      "portada": "./frontend/assets/bookImages/othello.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Othello",
       "paginas": 314,
@@ -1260,7 +1260,7 @@
     {
       "autor": "Sophocles",
       "pais": "Greece",
-      "portada": "../assets/bookImages/oedipus-the-king.jpg",
+      "portada": "./frontend/assets/bookImages/oedipus-the-king.jpg",
       "idioma": "Greek",
       "link": "https://en.wikipedia.org/wiki/Oedipus_the_King",
       "paginas": 88,
@@ -1275,7 +1275,7 @@
     {
       "autor": "Stendhal",
       "pais": "France",
-      "portada": "../assets/bookImages/le-rouge-et-le-noir.jpg",
+      "portada": "./frontend/assets/bookImages/le-rouge-et-le-noir.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/The_Red_and_the_Black",
       "paginas": 576,
@@ -1290,7 +1290,7 @@
     {
       "autor": "Laurence Sterne",
       "pais": "England",
-      "portada": "../assets/bookImages/the-life-and-opinions-of-tristram-shandy.jpg",
+      "portada": "./frontend/assets/bookImages/the-life-and-opinions-of-tristram-shandy.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman",
       "paginas": 640,
@@ -1305,7 +1305,7 @@
     {
       "autor": "Italo Svevo",
       "pais": "Italy",
-      "portada": "../assets/bookImages/confessions-of-zeno.jpg",
+      "portada": "./frontend/assets/bookImages/confessions-of-zeno.jpg",
       "idioma": "Italian",
       "link": "https://en.wikipedia.org/wiki/Zeno%27s_Conscience",
       "paginas": 412,
@@ -1320,7 +1320,7 @@
     {
       "autor": "Jonathan Swift",
       "pais": "Ireland",
-      "portada": "../assets/bookImages/gullivers-travels.jpg",
+      "portada": "./frontend/assets/bookImages/gullivers-travels.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels",
       "paginas": 178,
@@ -1335,7 +1335,7 @@
     {
       "autor": "Leo Tolstoy",
       "pais": "Russia",
-      "portada": "../assets/bookImages/war-and-peace.jpg",
+      "portada": "./frontend/assets/bookImages/war-and-peace.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/War_and_Peace",
       "paginas": 1296,
@@ -1350,7 +1350,7 @@
     {
       "autor": "Leo Tolstoy",
       "pais": "Russia",
-      "portada": "../assets/bookImages/anna-karenina.jpg",
+      "portada": "./frontend/assets/bookImages/anna-karenina.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/Anna_Karenina",
       "paginas": 864,
@@ -1365,7 +1365,7 @@
     {
       "autor": "Leo Tolstoy",
       "pais": "Russia",
-      "portada": "../assets/bookImages/the-death-of-ivan-ilyich.jpg",
+      "portada": "./frontend/assets/bookImages/the-death-of-ivan-ilyich.jpg",
       "idioma": "Russian",
       "link": "https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich",
       "paginas": 92,
@@ -1380,7 +1380,7 @@
     {
       "autor": "Mark Twain",
       "pais": "United States",
-      "portada": "../assets/bookImages/the-adventures-of-huckleberry-finn.jpg",
+      "portada": "./frontend/assets/bookImages/the-adventures-of-huckleberry-finn.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn",
       "paginas": 224,
@@ -1395,7 +1395,7 @@
     {
       "autor": "Valmiki",
       "pais": "India",
-      "portada": "../assets/bookImages/ramayana.jpg",
+      "portada": "./frontend/assets/bookImages/ramayana.jpg",
       "idioma": "Sanskrit",
       "link": "https://en.wikipedia.org/wiki/Ramayana",
       "paginas": 152,
@@ -1410,7 +1410,7 @@
     {
       "autor": "Virgil",
       "pais": "Roman Empire",
-      "portada": "../assets/bookImages/the-aeneid.jpg",
+      "portada": "./frontend/assets/bookImages/the-aeneid.jpg",
       "idioma": "Classical Latin",
       "link": "https://en.wikipedia.org/wiki/Aeneid",
       "paginas": 442,
@@ -1425,7 +1425,7 @@
     {
       "autor": "Vyasa",
       "pais": "India",
-      "portada": "../assets/bookImages/the-mahab-harata.jpg",
+      "portada": "./frontend/assets/bookImages/the-mahab-harata.jpg",
       "idioma": "Sanskrit",
       "link": "https://en.wikipedia.org/wiki/Mahabharata",
       "paginas": 276,
@@ -1440,7 +1440,7 @@
     {
       "autor": "Walt Whitman",
       "pais": "United States",
-      "portada": "../assets/bookImages/leaves-of-grass.jpg",
+      "portada": "./frontend/assets/bookImages/leaves-of-grass.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
       "paginas": 152,
@@ -1455,7 +1455,7 @@
     {
       "autor": "Virginia Woolf",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/mrs-dalloway.jpg",
+      "portada": "./frontend/assets/bookImages/mrs-dalloway.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway",
       "paginas": 216,
@@ -1470,7 +1470,7 @@
     {
       "autor": "Virginia Woolf",
       "pais": "United Kingdom",
-      "portada": "../assets/bookImages/to-the-lighthouse.jpg",
+      "portada": "./frontend/assets/bookImages/to-the-lighthouse.jpg",
       "idioma": "English",
       "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse",
       "paginas": 209,
@@ -1485,7 +1485,7 @@
     {
       "autor": "Marguerite Yourcenar",
       "pais": "France/Belgium",
-      "portada": "../assets/bookImages/memoirs-of-hadrian.jpg",
+      "portada": "./frontend/assets/bookImages/memoirs-of-hadrian.jpg",
       "idioma": "French",
       "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian",
       "paginas": 408,
