@@ -1,21 +1,21 @@
 const fraseContainer = document.querySelector('.frase-container');
 
-// Array de frases desde el archivo de texto
+// Array de frases desde el archivo json
 const frases = [];
 
 // Variable para llevar el control de la frase actual
 let fraseActualIndex = 0;
 
-// Función para cargar frases desde un archivo de texto
+// Función para cargar frases desde un archivo json
+const frasesJson = "frases.json";
+console.log("Solicitando JSON desde:", frasesJson);
 function cargarFrasesDesdeArchivo() {
-    fetch('../../frases.txt') // Reemplaza 'frases.txt' con la ruta correcta a tu archivo de texto
-        .then(response => response.text())
+    fetch('./frases.json') // ruta a tu archivo json (dos archivos: .\frases.json para desarrollo local, .\scripts\frases.json para deploy github pages)
+        .then(response => response.json())
         .then(data => {
-            // Dividir por líneas y eliminar líneas vacías
-            const lineas = data.split('\n').filter(frase => frase.trim() !== '');
-            
-            // Agregar cada línea como una frase al array de frases
-            frases.push(...lineas);
+            data.forEach(item => {
+                frases.push(item.frase);
+            });
 
             // Iniciar el carrusel
             iniciarCarrusel();
@@ -33,8 +33,8 @@ function mostrarSiguienteFrase() {
             // Después de establecer el contenido de la nueva frase, desvanécela de nuevo
             setTimeout(() => {
                 fraseContainer.style.opacity = 1;
-            }, 1000); // 1000 milisegundos (1 segundo) para que aparezca gradualmente
-        }, 1000); // 1000 milisegundos (1 segundo) para que se desvanezca gradualmente
+            }, 900); // 900 milisegundos (1 segundo) para que aparezca gradualmente
+        }, 900); // 900 milisegundos (1 segundo) para que se desvanezca gradualmente
     } else {
         // Reiniciar desde la primera frase
         fraseActualIndex = 0;
@@ -45,8 +45,8 @@ function mostrarSiguienteFrase() {
             // Después de establecer el contenido de la nueva frase, desvanécela de nuevo
             setTimeout(() => {
                 fraseContainer.style.opacity = 1;
-            }, 1000); // 1000 milisegundos (1 segundo) para que aparezca gradualmente
-        }, 1000); // 1000 milisegundos (1 segundo) para que se desvanezca gradualmente
+            }, 900); // 900 milisegundos para que aparezca gradualmente
+        }, 900); // 900 milisegundos para que se desvanezca gradualmente
     }
 }
 
