@@ -11,6 +11,7 @@
   background-color: #746b6b;
 }
 
+/* Productos */
 .product-card p {
   font-size: 20px;
   color: white;
@@ -34,57 +35,20 @@
   display: none;
 }
 
-
-/*version mobile*/
-@media (max-width: 479px) {
-  .product-card {
-    max-width: 300px;
-    }
-    #carouselExampleCaptions{
-      display: none;
-    }
-}
-
-/*version tablet*/
-@media (min-width: 480px) and (max-width: 1023px) {
-  .card {
-    max-width: 310px;
-    }
-}
-    #bookCardDescription{
-      font-size: 20px;
-      color:white;
-    }
-
-
- /* Contenedor para los botones */
- /* Estilos para el contenedor general */
-#cont-de-cat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
 /* Estilos para el contenedor de categorías */
 #category-buttons {
   display: flex;
   gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
   margin-top: 20px;
-}
-
-/* Estilos para el contenedor de categorías */
-#category-buttons {
-  display: flex;
-  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
-  margin-top: 20px;
+  }
 
   /* Estilos para el contenedor de botones */
 .button-container {
   flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
-  max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */
-
-  
+  max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */  
+  flex-direction: column;
 } 
+
 .category-button {
   /* Estilos específicos para botones oscuros */
   background-color: #596169; /* Color de fondo oscuro */
@@ -104,5 +68,39 @@
  }
 
 
+ /* Contenedor para los botones */
+ /* Estilos para el contenedor general */
+ #cont-de-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Estilos para el contenedor de categorías */
+#category-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
+  margin-top: 20px;
+}
 
 
+ /*version mobile*/
+@media (max-width: 479px) {
+  .product-card {
+    max-width: 300px;
+    }
+    #carouselExampleCaptions{
+      display: none;
+    }
+}
+
+/*version tablet*/
+@media (min-width: 480px) and (max-width: 1023px) {
+  .card {
+    max-width: 310px;
+    }
+}
+    #bookCardDescription{
+      font-size: 20px;
+      color:white;
+    }
