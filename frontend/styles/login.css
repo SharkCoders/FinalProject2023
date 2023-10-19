@@ -10,7 +10,7 @@
   align-items: center;
   width: 450px;
   padding: 40px;
-  background: #fff;
+  background: rgb(252, 275, 3, 1);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(250, 237, 39, 0.7);
   border-radius: 10px;
@@ -103,7 +103,7 @@
   border-radius: 10px;
   position: relative;
   color: black;
-  background: #FFCF1D;
+  
   margin-left: 12px;
   margin-right: 12px;
   text-transform: uppercase;
@@ -122,8 +122,8 @@
 
 /*HOVER EFECTO BOTON INGRESAR*/
 .buton:hover {
-  transition-delay: 1s;
-  background: rgb(250, 237, 39, 0.7);
+  transition-delay: 0s;
+  background: #FFE71D;
   color: black;
   border-radius: 5px;
   cursor: pointer;
