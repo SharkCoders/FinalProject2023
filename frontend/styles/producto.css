@@ -77,7 +77,7 @@
   display: flex;
   gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
   margin-top: 20px;
-
+}
   /* Estilos para el contenedor de botones */
 .button-container {
   flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
@@ -104,5 +104,8 @@
  }
 
 
-
-
+/*carrito*/
+.btn-outline-danger{
+  margin-left: 10px;
+  cursor: pointer;
+}
