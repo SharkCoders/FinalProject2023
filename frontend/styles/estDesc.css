@@ -124,5 +124,10 @@ main div button:active {
   main div button {
     padding: 8px 16px; /* Reduzca el tamaño del botón */
   }
+  .animado {
+    width: 350px;
+    padding: 10px;
+    margin: 5px;
+  }
 }
 /* Estilos para pantallas con un ancho máximo de 479px (pantallas de tipo celular) */
