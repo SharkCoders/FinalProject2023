@@ -97,30 +97,27 @@
 
 
 /*version tablet*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 426px){
   .card {
     max-width: 310px;
-    }
-    #category-buttons {
-      display: flex;
-      flex-wrap: wrap; /* Permite que los botones se envuelvan en nuevas líneas si no hay suficiente espacio */
-      justify-content: space-between; /* Distribuye los botones uniformemente en el contenedor */
-    }
-    
-    #category-buttons button {
-      flex-basis: calc(25% - 20px); /* 4 botones por fila (20px de espacio entre ellos) en pantallas grandes */
-      margin: 5px; /* Espacio entre los botones */
-    }
-
-    #filter-select {
-      display: none;
-    }
-
-    #bookCardDescription{
-      font-size: 20px;
-      color:white;
-    }
   }
+  #category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #category-buttons button {
+    flex-basis: calc(25% - 20px);
+    margin: 5px;
+  }
+  #filter-select {
+    display: none;
+  }
+  #bookCardDescription {
+    font-size: 20px;
+    color: white;
+  }
+}
 
  /* Contenedor para los botones */
  /* Estilos para el contenedor general */
