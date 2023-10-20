@@ -81,6 +81,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  
 }
 /* Estilos para el contenedor de categorías */
 #category-buttons {
@@ -89,12 +90,7 @@
   margin-top: 20px;
 }
 
-/* Estilos para el contenedor de categorías */
-#category-buttons {
-  display: flex;
-  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
-  margin-top: 20px;
-}
+
   /* Estilos para el contenedor de botones */
 .button-container {
   flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
@@ -111,13 +107,25 @@
   border-radius: 10px;
   cursor: pointer;
   text-transform: capitalize;
-  margin-bottom: 0.5cm;
+  margin-bottom: 4px;
+}
+
+/* ajuste de la botones */
+#category-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se envuelvan en nuevas líneas si no hay suficiente espacio */
+  justify-content: space-between; /* Distribuye los botones uniformemente en el contenedor */
+}
+
+#category-buttons button {
+  flex-basis: calc(25% - 20px); /* 4 botones por fila (20px de espacio entre ellos) en pantallas grandes */
+  margin: 4px; /* Espacio entre los botones */
 }
 
 /* Estilo cuando el cursor pasa sobre el botón */
  .category-button:hover {
   background-color: #03182c; /* Color de fondo oscuro */
-  color: #ffffff; /* Color de texto blanco */
+  color: #ee0c0c; /* Color de texto blanco */
  }
 
 

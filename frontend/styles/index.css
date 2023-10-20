@@ -32,6 +32,11 @@
     #carousel-container{
       display: none;
     }
+
+    .product-card {
+      max-width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho en pantallas pequeñas */
+  }
+  
 }
 
 
@@ -49,4 +54,22 @@
   75% {
     transform: translateX(-100%);
   }
+}
+main a {
+  text-decoration: none;
+  color: rgb(250, 126, 24);
+  padding: 10px 20px; /* Aumenta el padding para hacer el botón más grande */
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+main a:hover {
+  color: rgb(245, 150, 73);
+  transform: scale(1.55);
+  box-shadow: 0 0 15px rgba(243, 182, 69, 0.5); /* Aumenta el tamaño y la intensidad de la sombra */
+}
+
+main a:active {
+  color: rgb(235, 110, 51);
+  transform: scale(0.55);
+  box-shadow:  0 0 10px rgba(263, 182, 69, 1.4);
 }
