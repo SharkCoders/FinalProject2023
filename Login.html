@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LogIn</title>
-  <link rel="shortcut icon" href="/frontend/assets/Imagenes/favicon-32x32.png">
-  <link rel="stylesheet" href="./estilos.css">
+  <link rel="shortcut icon" href="./frontend/assets/Imagenes/favicon-32x32.png">
+  <link rel="stylesheet" href="./frontend/styles/estilos.css">
+  <link rel="stylesheet" href="./frontend/styles/login.css">
+  <link rel="shortcut icon" href="./frontend/assets/favicon-32x32.png">
   <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </head>
+
 
 <body>
   <header>
@@ -30,18 +36,41 @@
     </nav>
   </header>
 
+
   <main>
     <div class="div__login">
       <h1>Bienvenido</h1>
-      <form>
+
+
+
+
+      <form class="needs-validation" id="login" novalidate>
+
+
+
+
         <div class="div__login-input">
-          <input id="usuario" type="text" required>
-          <label>Usuario</label>
+          <input type="text" class="form__input form-control" id="usuario" name="usuario" required minlength="4"
+            maxlength="10" placeholder="Usuario">
+          <label for="usuario" class="form__label">Usuario</label>
+          <div class="invalid-feedback">
+            El Usuario es requerido y debe contener letras y números.
+          </div>
+
+
         </div>
+
+
         <div class="div__login-input">
-          <input id="contraseña" type="password" required>
-          <label>Contraseña</label>
+          <input type="password" class="form__input form-control" id="contrasena" required minlength="4" maxlength="16"
+            placeholder="Contraseña">
+          <label for="contrasena" class="form__label">Contraseña</label>
+          <div class="invalid-feedback" id="clave_requerida">
+            La Contraseña es requerida y debe ser de 4 dígitos o más.
+          </div>
         </div>
+
+
         <div class="div-botones">
           <button class="buton" type="submit">
             <span id="span1"></span>
@@ -50,12 +79,13 @@
             <span id="span4"></span>
             ingresar
           </button>
-          <a href="#" class="registarse btn-primary" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">registrarse
+          <a href="#" class="registarse btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">registrarse
           </a>
         </div>
       </form>
     </div>
+
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -64,19 +94,51 @@
             <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
               REGISTRO
             </h1>
-            <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="modal"
+              aria-label="Close"></button>
           </div>
-          <form>
+          <form class="needs-validation" id="registro" novalidate>
             <div class="modal-body ">
-              <label>Nombre</label>
-              <input id="nombre" type="text" required>
-              <label>Correo</label>
-              <input id="correo" type="email" required>
-              <label>Contraseña</label>
-              <input id="contrasena" type="password" required>
+              <div class="col">
+                <label class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="registroUsuario" minlength="4" maxlength="10" required>
+                <div class="form-text" id="basic-addon4">Solo letras y números entre 4 y 10 digitos.</div>
+                <div class="invalid-feedback">
+                  Debe respetar el formato.
+                </div>
+                <br>
+              </div>
+
+
+              <div class="col">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" id="registroCorreo" required>
+                <div class="invalid-feedback">
+                  Debe tener formato de correo valido.
+                </div>
+              </div><br>
+
+
+              <div class="col">
+                <label class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="registroContrasena" minlength="4" maxlength="16"
+                  required>
+                <div class="invalid-feedback">
+                  La contraseña debe tener al menos 4 caracteres.
+                </div>
+                <label class="form-label">Repite contraseña</label>
+                <input type="password" class="form-control" id="registroContrasenaRepetir" minlength="4" maxlength="16"
+                  required>
+                <div id="error-message" class="text-danger"></div>
+              </div>
             </div>
             <div class="modal-footer bg-dark">
-              <input type="submit" class="btn btn-warning fw-semibold" value="REGISTRARSE">
+              <input type="submit" class="btn btn-warning fw-semibold" value="REGISTRARSE" id="registroBoton">
+
+
+              <div class="alert alert-success" id="alertaOk" role="alert" style="display: none;">
+                Registro realizado exitosamente!
+              </div>
             </div>
           </form>
         </div>
@@ -84,17 +146,19 @@
     </div>
   </main>
 
+
   <footer>
     <div class="column">
       <h3>Nuestros Horarios</h3>
       <p><span>&#187;</span> Lunes a viernes:9:00 hs a 19:00 hs <br>
-      <span>&#187;</span> Sabados: De 9:00 hs a 14:00 hs <br>
+        <span>&#187;</span> Sabados: De 9:00 hs a 14:00 hs <br>
       </p>
     </div>
 
+
     <div class="column">
       <h3>Formas de pago</h3>
-      <img class="column-img" src="./frontend/assets/images/pagos.png" alt="" >
+      <img class="column-img" src="./frontend/assets/images/pagos.png" alt="">
       <p><span>&#187;</span> Envios a todo el pais<br>
         <span>&#187;</span> Costos de envío según C.P.<br>
       </p>
@@ -104,10 +168,9 @@
     </div>
   </footer>
 
+
   <!--SCRIPTS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <script src="frontend/scripts/scriptLoginValidate.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,184 @@
+/* ESTILOS DE PÁGINA DE PRODUCTO */
+
+.carousel-caption {
+  background-color: #b3b0b0;
+}
+
+/* Línea de carrusel o slider */
+.linea {
+  max-width: 100%;
+  height: 15px;
+  background-color: #746b6b;
+}
+
+.product-card p {
+  font-size: 20px;
+  color: white;
+}
+
+.card {
+  max-width: 600px;
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 999; /* Asegura que el botón esté en la capa superior */
+}
+
+/* Estilo específico para dispositivos que no sean laptops */
+@media (max-width: 1023px) {
+  .ir-arriba {
+    display: block;
+    font-size: 24px; /* Aumenta el tamaño del botón */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para destacarlo */
+    transition: all 0.3s ease; /* Agrega una transición suave */
+  }
+
+  /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  .ir-arriba:hover {
+    background-color: #000; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  }
+}
+
+
+/* Versión móvil */
+@media screen and (max-width: 425px) {
+  .product-card {
+    max-width: 250px;
+  }
+
+  .product-card img {
+    height: auto;
+  }
+
+  .card-body p {
+    font-size: 12px;
+  }
+
+  .product-card .btn {
+    font-size: 8px;
+  }
+
+  #carouselExampleCaptions {
+    display: none;
+  }
+
+  #category-buttons button {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #clear-filters {
+    display: none;
+  }
+
+  #filter-container {
+    text-align: center; /* Centrar la lista desplegable en móvil */
+  }
+
+  #filter-select {
+    display: block; /* Mostrar el select solo en dispositivos móviles */
+    border-radius: 5px;
+    font-family: sans-serif;
+    max-width: fit-content;
+  }
+}
+
+
+/*version tablet*/
+@media (min-width: 426px){
+  .card {
+    max-width: 310px;
+  }
+  #category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #category-buttons button {
+    flex-basis: calc(25% - 20px);
+    margin: 5px;
+  }
+  #filter-select {
+    display: none;
+  }
+  #bookCardDescription {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+ /* Contenedor para los botones */
+ /* Estilos para el contenedor general */
+#cont-de-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+/* Estilos para el contenedor de categorías */
+#category-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre el contenedor de categorías y el contenedor de tarjetas filtradas */  
+  margin-top: 20px;
+}
+
+
+  /* Estilos para el contenedor de botones */
+.button-container {
+  flex: 1000; /* El botón se expandirá para ocupar el espacio disponible en la fila */
+  max-width: calc(20% - 0.5cm); /* Máximo del 20% del ancho del contenedor con espacio interno de 0.5cm */
+
+  
+} 
+.category-button {
+  /* Estilos específicos para botones oscuros */
+  background-color: #596169; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco u otro color deseado */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+/* ajuste de la botones */
+#category-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se envuelvan en nuevas líneas si no hay suficiente espacio */
+  justify-content: space-between; /* Distribuye los botones uniformemente en el contenedor */
+}
+
+#category-buttons button {
+  flex-basis: calc(25% - 20px); /* 4 botones por fila (20px de espacio entre ellos) en pantallas grandes */
+  margin: 4px; /* Espacio entre los botones */
+}
+
+/* Estilo cuando el cursor pasa sobre el botón */
+ .category-button:hover {
+  background-color: #03182c; /* Color de fondo oscuro */
+  color: #ee0c0c; /* Color de texto blanco */
+ }
+
+
+/*carrito*/
+.btn-outline-danger{
+  margin-left: 10px;
+  cursor: pointer;
+}

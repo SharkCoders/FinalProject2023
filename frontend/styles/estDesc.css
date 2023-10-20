@@ -1,0 +1,133 @@
+/*Estilos de la página de descripción de producto*/
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 0; 
+  
+}
+main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      margin-top: 0; 
+      height: 40%;
+    }
+
+
+/* Selector para modificar el estilo del texto del párrafo */
+main div .animado {
+  color: rgb(218, 217, 233);
+  
+  border: 1px solid rgb(255, 0, 0);
+  padding: 15px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(41, 79, 112);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  clip-path: inset(0 0 50% 0); /* Oculta la mitad inferior del párrafo */
+  transition: clip-path 1.5s; /* Transición para animar el clip-path */
+  min-width: 150%;
+}
+
+/* Cuando el mouse está sobre el párrafo, revela gradualmente la mitad inferior */
+main div .animado:hover {
+  clip-path: inset(0 0 0 0); /* Restablece el clip-path para mostrar todo el texto */
+}
+
+main h5{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgb(197, 27, 126);
+  margin: 20px;
+  
+}
+ 
+main div p{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(95, 84, 94);
+  margin: 10px;
+  font-weight: bolder;
+}
+
+main div button {
+  background-color: rgb(41, 79, 112);
+  color: rgb(160, 170, 17); /* Color del texto */
+  padding: 10px 20px; /* Tamaño del botón */
+  border: 2px solid #072f49; /* Borde de color */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al apuntar */
+  margin-top: 15px; /* Mantiene el botón en su posición actual */
+  font-weight: bolder;
+  
+  
+  /* Efecto de transición al apuntar */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+main div button a{
+  
+  color: rgb(203, 216, 23); /* Color del texto */
+  padding: 10px 20px; /* Tamaño del botón */
+  text-decoration: none;
+  border-radius: 5px; /* Bordes redondeados */
+  
+  
+  
+  /* Efecto de transición al apuntar */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+main div button:hover {
+  background-color: #2233cf;
+  
+}
+
+
+main div button:focus {
+  outline: none; /* Elimina el borde predeterminado al hacer clic */
+  box-shadow: 0 0 5px #1e5d86; /* Sombra alrededor del botón */
+}
+
+/* Efecto de presionar */
+main div button:active {
+  transform: scale(0.95); /* Escala el botón al 95% cuando se presiona */
+  font-weight: bolder;
+}
+/* Aplicar estilos a pantallas con un ancho máximo de 768px (pantallas de tipo celular) */
+@media (max-width: 769px) {
+  main div {
+    align-items: center;
+    padding: 12px; /* Ajusta el espaciado interior */
+  }
+
+  main h5 {
+    font-size: 24px; /* Reduce el tamaño del título */
+  }
+
+  main div p {
+    font-size: 16px; /* Reduce el tamaño del texto */
+  }
+
+  main div .animado {
+    clip-path: inset(0 0 0 0); /* Restablece el clip-path para mostrar todo el texto en pantallas pequeñas */
+    transition: none; /* Desactiva la transición en pantallas pequeñas */
+  }
+
+  main div button {
+    padding: 8px 16px; /* Reduzca el tamaño del botón */
+  }
+  .animado {
+    width: 350px;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+/* Estilos para pantallas con un ancho máximo de 479px (pantallas de tipo celular) */
