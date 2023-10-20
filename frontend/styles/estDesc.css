@@ -5,7 +5,7 @@ main div {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  margin-top: 0; /* Ajusta la cantidad de espacio vertical según tus preferencias */
+  margin-top: 0; 
   
 }
 main{
@@ -13,7 +13,7 @@ main{
       flex-direction: column;
       align-items: center;
       justify-content: start;
-      margin-top: 0; /* Ajusta la cantidad de espacio vertical según tus preferencias */
+      margin-top: 0; 
       height: 40%;
     }
 

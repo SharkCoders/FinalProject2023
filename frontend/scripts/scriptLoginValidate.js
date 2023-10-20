@@ -77,7 +77,7 @@ var ExpresionRegular = /^[a-zA-Z0-9]+$/;
 
 
       var usuario = document.getElementById("registroUsuario").value;
-      var Correo = document.getElementById("registroCorreo").value;
+      var correo = document.getElementById("registroCorreo").value;
       var contrasena = document.getElementById("registroContrasena");
       var contrasenaRepetir = document.getElementById("registroContrasenaRepetir");
       var errorMensaje = document.getElementById("error-message");

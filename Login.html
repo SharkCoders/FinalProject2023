@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./frontend/styles/estilos.css">
   <link rel="stylesheet" href="./frontend/styles/login.css">
   <link rel="shortcut icon" href="./frontend/assets/favicon-32x32.png">
-  <!-- <link rel="stylesheet" href="./estilos.css"> -->
   <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -52,7 +51,7 @@
 
         <div class="div__login-input">
           <input type="text" class="form__input form-control" id="usuario" name="usuario" required minlength="4"
-            maxlength="10">
+            maxlength="10" placeholder="Usuario">
           <label for="usuario" class="form__label">Usuario</label>
           <div class="invalid-feedback">
             El Usuario es requerido y debe contener letras y números.
@@ -63,7 +62,8 @@
 
 
         <div class="div__login-input">
-          <input type="password" class="form__input form-control" id="contrasena" required minlength="4" maxlength="16">
+          <input type="password" class="form__input form-control" id="contrasena" required minlength="4" maxlength="16"
+            placeholder="Contraseña">
           <label for="contrasena" class="form__label">Contraseña</label>
           <div class="invalid-feedback" id="clave_requerida">
             La Contraseña es requerida y debe ser de 4 dígitos o más.
@@ -101,10 +101,8 @@
             <div class="modal-body ">
               <div class="col">
                 <label class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="registroUsuario" minlength="4"
-                maxlength="10" required>
+                <input type="text" class="form-control" id="registroUsuario" minlength="4" maxlength="10" required>
                 <div class="form-text" id="basic-addon4">Solo letras y números entre 4 y 10 digitos.</div>
-                <!-- comentario -->
                 <div class="invalid-feedback">
                   Debe respetar el formato.
                 </div>
@@ -123,12 +121,14 @@
 
               <div class="col">
                 <label class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="registroContrasena" minlength="4" maxlength="16" required>
+                <input type="password" class="form-control" id="registroContrasena" minlength="4" maxlength="16"
+                  required>
                 <div class="invalid-feedback">
                   La contraseña debe tener al menos 4 caracteres.
                 </div>
                 <label class="form-label">Repite contraseña</label>
-                <input type="password" class="form-control" id="registroContrasenaRepetir" minlength="4" maxlength="16" required>
+                <input type="password" class="form-control" id="registroContrasenaRepetir" minlength="4" maxlength="16"
+                  required>
                 <div id="error-message" class="text-danger"></div>
               </div>
             </div>

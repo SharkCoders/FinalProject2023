@@ -89,6 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // Obtener categorías únicas de los libros
       const categories = [...new Set(allBooks.map(book => book.categoria))];
 
+      // Agregar un valor por defecto "Seleccionar categoría" al inicio del <select>
+      const defaultOption = document.createElement("option");
+      defaultOption.value = "all"; // Puedes establecer el valor como "all" o cualquier otro valor adecuado.
+      defaultOption.textContent = "Seleccionar categoría";
+      filterSelect.appendChild(defaultOption);
+      
       // Llenar el <select> con las categorías
       categories.forEach(category => {
         const option = document.createElement("option");
