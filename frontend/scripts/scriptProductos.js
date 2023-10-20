@@ -74,25 +74,25 @@ document.addEventListener("DOMContentLoaded", function () {
     card.classList.add("product-card");
 
     const cardContent = `
-        <div class="card text-bg-secondary mb-1" style="max-width: 700px;">
-  
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="${bookInfo.portada}" alt="${bookInfo.titulo}" class="card-img-top">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <p id="title"><br>Título: ${bookInfo.titulo}</p>
-                        <p>Autor: ${bookInfo.autor || "Desconocido"}</p>
-                        <p>Categoría: ${bookInfo.categoria || "Desconocida"}</p>
-                        <p>Precio: $ ${bookInfo.precio}</p>
-                        <p class="stock">Stock: ${bookInfo.stock}</p>
-                        <button class="btn btn-dark" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
-                        <a href="/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="card text-bg-secondary mb-1" style="max-width: 700px;">
+  <div class="d-flex align-items-center">
+    <div class="col-4">
+      <img src="${bookInfo.portada}" alt="${bookInfo.titulo}" class="card-img-top">
+    </div>
+    <div class="col-8">
+      <div class="card-body">
+        <p id="title"><br>Título: ${bookInfo.titulo}</p>
+        <p>Autor: ${bookInfo.autor || "Desconocido"}</p>
+        <p>Categoría: ${bookInfo.categoria || "Desconocida"}</p>
+        <p>Precio: $ ${bookInfo.precio}</p>
+        <p class="stock">Stock: ${bookInfo.stock}</p>
+        <button class="btn btn-dark button" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
+        <a href="/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light button">Resumen</a>
+      </div>
+    </div>
+  </div>
+</div>
+
     `;
 
     card.innerHTML = cardContent;

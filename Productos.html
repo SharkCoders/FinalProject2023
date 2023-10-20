@@ -128,12 +128,22 @@
     <!--inicio Buscador-->
     <br>
     <!--dinámico-->
-    <form class="d-flex" id="search-form">
-      <!-- Barra de búsqueda -->
-      <input class="form-control me-2" type="search" id="search-input" aria-label="Search">
-      <button class="btn btn-light" type="submit">Buscar</button>
-    </form>
+    <div>
+      <form class="d-flex" id="search-form">
+        <!-- Barra de búsqueda -->
+        <input class="form-control me-2" type="search" id="search-input" aria-label="Search">
+        <button class="btn btn-light" type="submit">Buscar</button>
+        <button id="clear-filters" class="btn btn-danger">Quitar Filtros</button>
+      </form>
+    </div>
     <br>
+
+    <!--muestra una lista de categorías en versión móvil-->
+    <div id="filter-container">
+      <select id="filter-select">
+        <!-- Opción inicial vacía -->
+      </select>
+    </div>
 
     <!-- Boton hacia arriba -->
     <a class="ir-arriba" title="Volver arriba">
@@ -152,29 +162,32 @@
     <div id="cont-de-cat">
       <div id="category-buttons"></div>
 
-        <!-- Botones para categorías -->
-        <div id="filtered-cardContainer"></div>
+      <!-- Botones para categorías -->
+      <div id="filtered-cardContainer"></div>
+    </div>
+    <br>
+
+    <!--carrito de compras-->
+    <div class="card text-bg-dark mb-3 fixed-bottom" style="max-width: 18rem;" id="cartContainer">
+      <div class="card-header text-centered">
+        <h4>Mi selección</h4>
       </div>
-
-      <!--carrito de compras-->
-      <div class="card text-bg-dark mb-3 fixed-bottom" style="max-width: 18rem;" id="cartContainer">
-        <div class="card-header text-centered"><h4>Mi selección</h4></div>
-        <div class="card-body">
-          <ul id="carrito-lista" class="carrito-lista">
-            <!-- Aquí se mostrarán los elementos seleccionados en el carrito -->
-          </ul>
-          <h5>Total: $<span id="carrito-total">0.00</span></h5>
-        </div>
+      <div class="card-body">
+        <ul id="carrito-lista" class="carrito-lista">
+          <!-- Aquí se mostrarán los elementos seleccionados en el carrito -->
+        </ul>
+        <h5>Total: $<span id="carrito-total">0.00</span></h5>
       </div>
+    </div>
 
-      <!--contenedor dinámico de tarjetas-->
-      <div id="cardContainer"></div>
-      <script src="frontend/scripts/scriptProductos.js"></script>
+    <!--contenedor dinámico de tarjetas-->
+    <div id="cardContainer"></div>
+    <script src="frontend/scripts/scriptProductos.js"></script>
 
 
-      <!--estático-->
-      <!--selector de categoría-->
-      <!--<form class="d-flex">
+    <!--estático-->
+    <!--selector de categoría-->
+    <!--<form class="d-flex">
       <div class="Buscador-categoria">
         <label for="categoria-select">
           <h5>Buscar por categoria:</h5>
@@ -188,15 +201,15 @@
           <option value="biografia">biografia</option>
         </select>
       </div>-->
-      <!--fin selector-->
-      <!--<input class="form-control me-2" type="search" aria-label="Search">
+    <!--fin selector-->
+    <!--<input class="form-control me-2" type="search" aria-label="Search">
       <button class="btn btn-light" type="submit">Buscar</button>
     </form>
     <section>-->
-      <!--fin Buscador-->
+    <!--fin Buscador-->
 
-      <!---galeria de productos-->
-      <!--cards estáticas--><!--
+    <!---galeria de productos-->
+    <!--cards estáticas--><!--
         <div class="product-card fantasia">
           <img src="../assets/Imagenes/avatar.jpg" alt="Producto 1">
           <h2>Libro de Avatar</h2>
@@ -543,7 +556,7 @@
     </div>
       </div>
     </section>-->
-      <!--fin de Galeria de Productos-->
+    <!--fin de Galeria de Productos-->
 
   </main>
 
@@ -570,11 +583,13 @@
   </footer>
   <!-- fin de footer -->
 
-<!--SCRIPTS-->
-<script src="./frontend/scripts/filter-books.js"></script>
-<script src="./frontend/scripts/scriptProductos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!--SCRIPTS-->
+  <script src="./frontend/scripts/filter-books.js"></script>
+  <script src="./frontend/scripts/scriptProductos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

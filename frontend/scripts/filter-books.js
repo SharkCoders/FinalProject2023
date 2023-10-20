@@ -65,3 +65,48 @@ document.addEventListener('DOMContentLoaded', function () {
     return card;
   }
 });
+
+const clearFiltersButton = document.getElementById("clear-filters");
+clearFiltersButton.addEventListener("click", function () {
+  // Limpiar el campo de búsqueda
+  searchInput.value = "";
+  // Mostrar todos los libros nuevamente
+  showBooks(allBooks);
+});
+
+//Lista de filtros select para versión movil
+document.addEventListener("DOMContentLoaded", function () {
+  const filterSelect = document.getElementById("filter-select");
+
+  // Cargar los datos desde el archivo JSON local
+  const jsonUrl = "books.json";
+  console.log("Solicitando JSON desde:", jsonUrl);
+  fetch(jsonUrl)
+    .then(response => response.json())
+    .then(data => {
+      allBooks = data;
+
+      // Obtener categorías únicas de los libros
+      const categories = [...new Set(allBooks.map(book => book.categoria))];
+
+      // Llenar el <select> con las categorías
+      categories.forEach(category => {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent = category;
+        filterSelect.appendChild(option);
+      });
+
+      // Añadir un evento de cambio al <select> para filtrar libros
+      filterSelect.addEventListener("change", function () {
+        const selectedCategory = filterSelect.value;
+        if (selectedCategory === "all") {
+          showBooks(allBooks);
+        } else {
+          const filteredBooks = allBooks.filter(book => book.categoria === selectedCategory);
+          showBooks(filteredBooks);
+        }
+      });
+    })
+    .catch(error => console.error(error));
+});
