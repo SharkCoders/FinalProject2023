@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Encontrar el libro correspondiente en el array de libros
     const jsonUrl = "books.json";
     fetch(jsonUrl)
-      .then((response) => response.json())
+      .then((response) => {
+        return response.json()})
       .then((data) => {
         const book = data.find((book) => book.titulo === bookTitle);
         if (book) {
