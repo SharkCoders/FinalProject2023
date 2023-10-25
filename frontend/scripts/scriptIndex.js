@@ -11,7 +11,8 @@ const frasesJson = "/frases.json";
 console.log("Solicitando JSON desde:", frasesJson);
 function cargarFrasesDesdeArchivo() {
     fetch(frasesJson) // ruta a tu archivo json
-        .then(response => response.json())
+        .then(response => {
+            return response.json()})
         .then(data => {
             data.forEach(item => {
                 frases.push(item.frase);
