@@ -1,28 +1,20 @@
 const fraseContainer = document.querySelector('.frase-container');
 
-// Array de frases desde el archivo json
-const frases = [];
+// Array de frases definido en el propio código
+const frases = [
+    "El misterio de la vida no es un problema a resolver, sino una realidad a experimentar - Duna, Frank Herbert",
+    "Estar solo no tiene nada que ver con cuantas personas hay alrededor - Revolutionary Road, Richard Yates",
+    "El hombre débil se vuelve fuerte cuando no tiene nada, porque sólo entonces puede sentir la locura de la desesperación - La compañía blanca, Arthur Conan Doyle",
+    "Si buscas la perfección nunca estarás contento - Anna Karenina, Leon Tolstoy",
+    "Mientras el corazón late, mientras el cuerpo y alma siguen juntos, no puedo admitir que cualquier criatura dotada de voluntad tiene necesidad de perder la esperanza en la vida - Viaje al centro de la tierra, Julio Verne",
+    "Tengo esperanza o podría no vivir - La isla del doctor Moreau, H.G. Wells",
+    "Llamo a la gente “rica” cuando son capaces de satisfacer las necesidades de su imaginación - El retrato de una dama, Henry James",
+    "Luchar hasta el último aliento - Enrique VI, William Shakespeare",
+  // Pueden agregar las frases que quieran o crean necesarias
+];
 
 // Variable para llevar el control de la frase actual
 let fraseActualIndex = 0;
-
-// Función para cargar frases desde un archivo json
-const frasesJson = "/frases.json";
-console.log("Solicitando JSON desde:", frasesJson);
-function cargarFrasesDesdeArchivo() {
-    fetch(frasesJson) // ruta a tu archivo json
-        .then(response => {
-            return response.json()})
-        .then(data => {
-            data.forEach(item => {
-                frases.push(item.frase);
-            });
-
-            // Iniciar el carrusel
-            iniciarCarrusel();
-        })
-        .catch(error => console.error('Error al cargar las frases:', error));
-}
 
 // Función para mostrar la siguiente frase en el carrusel con un efecto de desvanecimiento
 function mostrarSiguienteFrase() {
@@ -54,7 +46,8 @@ function mostrarSiguienteFrase() {
 // Función para iniciar el carrusel
 function iniciarCarrusel() {
     mostrarSiguienteFrase();
-    setInterval(mostrarSiguienteFrase, 10000); // Cambia la frase cada 7 segundos (7000 milisegundos)
+    setInterval(mostrarSiguienteFrase, 10000); // Cambia la frase cada 10 segundos (10000 milisegundos)
 }
 
-cargarFrasesDesdeArchivo();
+// Iniciar el carrusel
+iniciarCarrusel();
