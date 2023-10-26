@@ -19,7 +19,7 @@ header {
 
 
 main {
-  min-height: 90vh;
+  min-height: 71.2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,7 @@ body {
 
 
 footer {
-  min-height: 3vh;
+  min-height: 2vh;
   background-color: #746b6b;
   color: white;
   padding: 10px;
