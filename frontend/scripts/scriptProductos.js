@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Cargar los datos desde el archivo JSON local
-  const jsonUrl = "../../books.json";
-  console.log("Solicitando JSON desde:", jsonUrl);
-  fetch(jsonUrl)
-    .then(response => response.json())
+  const json = "books.json";
+  console.log("Solicitando JSON desde:", json);
+  fetch(json)
+    .then(response => {
+      return response.json()})
     .then(data => {
       allBooks = data;
       showBooks(allBooks);
