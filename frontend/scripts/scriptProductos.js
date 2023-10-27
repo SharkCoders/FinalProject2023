@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Precio: $ ${bookInfo.precio}</p>
         <p class="stock">Stock: ${bookInfo.stock}</p>
         <button class="btn btn-dark" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
-        <a href="./descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
-      </div>
+        <a href="https://sharkcoders.github.io/FinalProject2023/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="comprar-button">Resumen</a>
+        </div>
     </div>
   </div>
 </div>
