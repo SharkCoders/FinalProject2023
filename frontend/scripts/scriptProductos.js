@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Precio: $ ${bookInfo.precio}</p>
         <p class="stock">Stock: ${bookInfo.stock}</p>
         <button class="btn btn-dark" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
-        <a href="https://sharkcoders.github.io/FinalProject2023/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="comprar-button">Resumen</a>
-        </div>
+        <a href="./descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
+      </div>
     </div>
   </div>
 </div>
@@ -187,4 +187,13 @@ function eliminarDelCarrito(bookTitle) {
     actualizarCarrito();
     actualizarStockEnTarjeta(book); // Actualiza el stock en la tarjeta
   }
+}
+
+// Obtener la URL de la página de descripción
+const url = `./descripcion.html?title=${encodeURIComponent(book.titulo)}`;
+
+// Comprobar si la URL es correcta
+if (!url.includes("descripcion.html")) {
+  // La URL es incorrecta
+  console.error("La URL de la página de descripción es incorrecta.");
 }
