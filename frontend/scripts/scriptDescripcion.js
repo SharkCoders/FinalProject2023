@@ -47,3 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  function mostrarResumen(button) {
+    const bookTitle = button.getAttribute("data-title");
+    window.location.href = `/descripcion.html?title=${encodeURIComponent(bookTitle)}`;
+  }
+  
