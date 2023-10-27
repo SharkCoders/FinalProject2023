@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookTitle = urlParams.get("title");
   
     // Encontrar el libro correspondiente en el array de libros
-    const jsonUrl = "/books.json";
+    const jsonUrl = "../../books.json";
     fetch(jsonUrl)
       .then((response) => {
         return response.json()})
@@ -46,9 +46,4 @@ document.addEventListener("DOMContentLoaded", function () {
       bookContainer.innerHTML = bookContent;
     }
   });
-  
-  function mostrarResumen(button) {
-    const bookTitle = button.getAttribute("data-title");
-    window.location.href = `/descripcion.html?title=${encodeURIComponent(bookTitle)}`;
-  }
   

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Cargar los datos desde el archivo JSON local
-  const jsonUrl = "books.json";
+  const jsonUrl = "../../books.json";
   console.log("Solicitando JSON desde:", jsonUrl);
   fetch(jsonUrl)
     .then(response => response.json())
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Precio: $ ${bookInfo.precio}</p>
         <p class="stock">Stock: ${bookInfo.stock}</p>
         <button class="btn btn-dark" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
-        <button class="btn btn-light" data-title="${bookInfo.titulo}" onclick="mostrarResumen(this)">Resumen</button>
+        <a href="/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
       </div>
     </div>
   </div>
