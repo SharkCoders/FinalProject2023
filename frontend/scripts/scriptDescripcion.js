@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookTitle = urlParams.get("title");
   
     // Encontrar el libro correspondiente en el array de libros
-    const jsonUrl = "../../books.json";
-    fetch(jsonUrl)
-      .then((response) => {
+    const json = "books.json";
+    fetch(json)
+      .then(response => {
         return response.json()})
-      .then((data) => {
+      .then(data => {
         const book = data.find((book) => book.titulo === bookTitle);
         if (book) {
           showBookDetails(book);
