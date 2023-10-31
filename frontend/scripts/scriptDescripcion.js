@@ -1,8 +1,3 @@
-fetch("./../../books.json")
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch((error) => console.error(error));
-
 document.addEventListener("DOMContentLoaded", function () {
   // Obtener el título del libro de la URL
   const urlParams = new URLSearchParams(window.location.search);
