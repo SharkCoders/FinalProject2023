@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(error => console.error(error));
 
-  // Función para mostrar libros queda igual si mal no recuerdo
+});
+
+ // Función para mostrar libros
   function showBooks(books) {
     const cardContainer = document.getElementById('cardContainer');
     cardContainer.innerHTML = ''; // Limpiar resultados anteriores
@@ -63,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
     card.innerHTML = cardContent;
     return card;
   }
-});
 
 const clearFiltersButton = document.getElementById("clear-filters");
 clearFiltersButton.addEventListener("click", function () {
