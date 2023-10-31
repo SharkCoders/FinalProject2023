@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const categoryButtons = document.getElementById('category-buttons'); 
 
   // Cargar los datos desde el archivo JSON local
-  const jsonUrl = '../../books.json';
+  const jsonUrl = 'books.json';
   fetch(jsonUrl)
     .then(response => response.json())
     .then(data => {
