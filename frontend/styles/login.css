@@ -1,3 +1,12 @@
+main {
+  min-height: 71.2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 /* ESTILOS LOGIN PAGE */
 body {
   font-family: "Roboto Condensed", sans-serif;

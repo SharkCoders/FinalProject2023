@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Cargar los datos desde el archivo JSON local
-  const jsonUrl = "books.json";
-  console.log("Solicitando JSON desde:", jsonUrl);
-  fetch(jsonUrl)
-    .then(response => response.json())
+  const json = "books.json";
+  console.log("Solicitando JSON desde:", json);
+  fetch(json)
+    .then(response => {
+      return response.json()})
     .then(data => {
       allBooks = data;
       showBooks(allBooks);
@@ -87,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>Precio: $ ${bookInfo.precio}</p>
         <p class="stock">Stock: ${bookInfo.stock}</p>
         <button class="btn btn-dark" onclick="agregarAlCarrito('${bookInfo.titulo}')">Comprar</button>
-        <a href="/descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
+        <a href="../../descripcion.html?title=${encodeURIComponent(bookInfo.titulo)}" class="btn btn-light">Resumen</a>
       </div>
     </div>
   </div>
