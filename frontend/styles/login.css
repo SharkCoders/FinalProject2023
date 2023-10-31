@@ -59,11 +59,7 @@ body {
   transition: 0.5s;
 }
 
-.div__login .div__login-input input:focus ~ label,
-.div__login .div__login-input input:valid ~ label {
-  top: -20px;
-  font-size: 12px;
-}
+
 
 .invalid-feedback {
   color: #d9534f;
@@ -83,7 +79,7 @@ body {
   letter-spacing: 3px;
   overflow: hidden;
   cursor: pointer;
-  transition: background 0.3s;
+ 
 }
 
 .buton:hover {
@@ -101,7 +97,7 @@ body {
   font-size: 16px;
   background: #faed27;
   cursor: pointer;
-  transition: background 0.3s;
+  
 }
 
 .registarse:hover {
