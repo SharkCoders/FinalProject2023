@@ -2,10 +2,11 @@ import mysql.connector
 from flask import Flask, render_template
 import mysql.connector
 
+
 class Administrador():
     def __init__(self):
         self.conn = mysql.connector.connect(
-            port="",  
+            port="",
             user="root",
             password="",
             database="librosbd"
@@ -23,13 +24,13 @@ class Administrador():
         precio = int(input("ingrese precio: "))
         stock = int(input("ingrese stock disponible: "))
         self.cursor.execute('''
-            INSERT INTO Libro (Titulo, Autor, Categoria, Portada, Descripcion, Precio, Stock)
+            INSERT INTO Libros (Titulo, Autor, Categoria, Portada, Descripcion, Precio, Stock)
             VALUES (%s, %s, %s, %s , %s, %s, %s)
         ''', (titulo, autor, categoria, portada, descripcion, precio, stock))
         self.conn.commit()
 
     def mostar_registos(self):
-        sql = "SELECT * FROM Libro"
+        sql = "SELECT * FROM Libros"
         self.cursor.execute(sql)
         fila = self.cursor.fetchall()
         for filas in fila:
@@ -54,14 +55,15 @@ class Administrador():
         descripcion = input("ingrese la descripción/resumen del libro: ")
         precio = int(input("ingrese precio: "))
         stock = int(input("ingrese stock disponible: "))
-        sql = "UPDATE Libro SET Titulo=%s, Autor=%s, Categoria=%s, Portada=%s, Descripcion=%s, Precio=%s, Stock=%s WHERE id_libro=%s"
-        self.cursor.execute(sql, (titulo, autor, categoria, portada, descripcion, precio, stock, id))
+        sql = "UPDATE Libros SET Titulo=%s, Autor=%s, Categoria=%s, Portada=%s, Descripcion=%s, Precio=%s, Stock=%s WHERE id_libro=%s"
+        self.cursor.execute(sql, (titulo, autor, categoria,
+                            portada, descripcion, precio, stock, id))
         self.conn.commit()
         print("Libro Actualizado!")
 
     def borrar_libros(self):
         id = int(input("INGRESA EL ID del libro: "))
-        sql = "DELETE FROM Libro WHERE id_libro=%s"
+        sql = "DELETE FROM Libros WHERE id_libro=%s"
         self.cursor.execute(sql, (id,))
         self.conn.commit()
         print("El registro de libro ha sido eliminado con éxito.")
@@ -97,6 +99,7 @@ class Administrador():
                 print("Por favor, selecciona una opción válida")
 
         self.conn.close()
+
 
 if __name__ == "__main__":
     Admi = Administrador()
