@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookContent = `
       <div class="mb-3" style="max-width: 760px;">
         <div class="row g-0">
-          
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="title">${book.titulo}</h5>
