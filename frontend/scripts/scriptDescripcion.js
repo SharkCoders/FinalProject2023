@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const bookTitle = urlParams.get("title");
 
   // Encontrar el libro correspondiente en el array de libros
-  const json = "../../books.json";
+  const json = "books.json";
   fetch(json)
     .then(response => {
       return response.json()})
