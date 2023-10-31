@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <p class="animado">Sinopsis: ${book.descripcion}</p>
               <p class="card-text2">Precio: $ ${book.precio}</p>
               <p class="card-text">Stock Disponible: ${book.stock} Unidades</p>
-              <button id="comprarButton" class="comprar-button"><a href="../../Productos.html">Volver</a></button>
+              <a class="btn btn-dark" href="Productos.html">Volver</a>
             </div>
           </div>
         </div>
