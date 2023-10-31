@@ -1,3 +1,8 @@
+fetch("./../../books.json")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => console.error(error));
+
 document.addEventListener("DOMContentLoaded", function () {
   // Obtener el título del libro de la URL
   const urlParams = new URLSearchParams(window.location.search);
@@ -12,11 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const book = data.find((book) => book.titulo === bookTitle);
       if (book) {
         showBookDetails(book);
-      } else {
-        // Si no se encuentra el libro, mostrar un mensaje de error
-        const errorContainer = document.getElementById("error-container");
-        errorContainer.textContent = "Libro no encontrado";
-      }
+      } 
     })
     .catch((error) => console.error(error));
 
