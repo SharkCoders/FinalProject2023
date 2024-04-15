@@ -33,11 +33,11 @@ Funcionalidad 3: desde el backend, el usuario administrador puede modificar la b
 * MySQL
 
 # 👷‍♀️👷‍♂️ Contributors
-* Marcelo Molina
-* Jorge Pegoraro
-* Elias Oro
-* Analía Pellicer
-* Pamela Ponce
-* Nahir Ñañez
-* Ivette Nobiltá
-* Leonardo Plaza
+* Miguel Angel Gonzalez
+* Nahir Nicolás Ñañez 
+* Analia Anahí Pellicer Palacios 
+* Franco Rafael Orellana
+* Marcelo Javier Luna Dalla Lasta
+* Virginia Soledad Falconi
+* Leonardo Plaza Domina
+* Ivette Jael Nobiltá
